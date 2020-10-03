@@ -1,0 +1,53 @@
+<header class="header">
+    <nav class="header-fixed-bar">
+        <div class="header-fixed-bar-wrapper limiter">
+            <button class="header__hamburger is-mobile mobile-menu-trigger">
+                <img src="./img/icons/icon-burger.svg" alt="icon-burger">
+            </button>
+            <a href="#" class="header-fixed-bar__logo">
+                <img src="./img/default/logo.svg" alt="TopAvtor">
+            </a>
+            <ul class="header-fixed-bar-links right-aligned">
+                <li class="header-fixed-bar-links__item is-active">
+                    <a href="#">Рейтинг</a>
+                </li>
+                <li class="header-fixed-bar-links__item">
+                    <a href="#">Компании</a>
+                </li>
+                <li class="header-fixed-bar-links__item">
+                    <a href="#">Добавить отзыв</a>
+                </li>
+            </ul>
+            <div class="header-fixed-bar-auth">
+                <a href="#" class="def-btn def-btn--blue header-fixed-bar-auth__login trigger-login">Вход</a>
+                <a href="#" class="def-btn def-btn--orange header-fixed-bar-auth__reg trigger-reg">Регистрация</a>
+            </div>
+            <button class="header__auth is-mobile right-aligned trigger-login">
+                <img src="./img/icons/icon-user.svg" alt="icon-user">
+            </button>
+        </div>
+    </nav>
+    <section class="header-search">
+        <div class="header-search-wrapper limiter">
+            <h1 class="header-search__title">Онлайн-сервис ТопАвтор</h1>
+            <h2 class="header-search__subtitle">Самые честные рейтинг и отзывы в интернете о рефератных компаниях. Более 1200 компаний в нашей базе позволят выбрать лучшую.</h2>
+            <div class="header-search-inner">
+                @@include("../search-input/search-input-rounded.html")
+            </div>
+        </div>
+    </section>
+</header>
+
+
+<div class="mobile-menu-wrapper is-mobile">
+    <div class="mobile-menu">
+        <div class="mobile-menu__close mobile-menu-trigger"></div>
+        <div class="mobile-menu__title">Меню сайта</div>
+        <nav class="mobile-menu-nav">
+            <a href="#" class="mobile-menu-nav__item">Главная</a>
+            <a href="#" class="mobile-menu-nav__item is-current">Рейтинг</a>
+            <a href="#" class="mobile-menu-nav__item">Компании</a>
+            <a href="#" class="mobile-menu-nav__item">Добавить отзыв</a>
+        </nav>
+    </div>
+</div>

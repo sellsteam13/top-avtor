@@ -1,0 +1,185 @@
+.main-top {
+    padding: 50px 0;
+    @media (max-width: 992px) {
+        padding: 30px 0 50px;
+        overflow: hidden;
+    }
+    &__more {
+        margin-top: 33px;
+        padding: 0 40px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        background-color: transparent;
+        border: 1px solid $orange;
+        color: $orange;
+        white-space: nowrap;
+    }
+    &-heading {
+        padding-left: 70px;
+        position: relative;
+        margin-bottom: 40px;
+        @media (max-width: 992px) {
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+        &__icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 57px;
+            height: 57px;
+            background: url('../img/icons/icon-lavres.svg') no-repeat center;
+            background-size: 100% 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $black;
+            font-size: rem(16);
+            font-weight: 800;
+            @media (max-width: 992px) {
+                position: static;
+                width: 39px;
+                height: 39px;
+                font-size: rem(12);
+                margin: 0 auto 10px;
+            }
+        }
+        &__title {
+            font-weight: bold;
+            color: #343542;
+            margin-bottom: 10px;
+            @media (max-width: 992px) {
+                text-align: center;
+                font-size: rem(30);
+            }
+        }
+        &__subtitle {
+            font-size: rem(21);
+            line-height: 100%;
+            color: #555A67;
+            @media (max-width: 992px) {
+                font-size: rem(17);
+                text-align: center;
+            }
+        }
+    }
+    &-table {
+        @media (max-width: 992px) {
+            max-height: calc(164px * 6 - 20px);
+            overflow: hidden;
+            position: relative;
+            margin: 0 -20px;
+            padding-top: 15px;
+            &:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 1;
+                height: 145px;
+                background: linear-gradient(0deg, #FFFFFF -4.83%, rgba(255, 255, 255, 0) 95.17%);
+            }
+        }
+        .t-head {
+            @media (max-width: 992px) {
+                display: none;
+            }
+        }
+        .t-row {
+            @media (max-width: 992px) {
+                flex-wrap: wrap;
+                position: relative;
+                justify-content: center;
+                padding: 24px 0 30px;
+                margin: 0 -20px;
+                .def-table {
+                    &-company {
+                        max-width: calc(100vw - 40px);
+                        &__avatar {
+                            width: 30px;
+                            height: 30px;
+                            padding: 5px;
+                            margin-right: 13px;
+                        }
+                        &__link {
+                            font-size: rem(16);
+                        }
+                    }
+                }
+            }
+            .t-item {
+                &:nth-child(1) {
+                    width: 70px;
+                    @media (max-width: 992px) {
+                        position: absolute;
+                        top: 0;
+                        transform: translate(-50%, -50%);
+                        background-color: $white;
+                        width: unset;
+                        padding: 0 13px;
+                        left: 50%;
+                    }
+                }
+                &:nth-child(2) {
+                    width: calc(((470 / 1182) * 100%) - 70px);
+                    @media (max-width: 992px) {
+                        width: 100%;
+                        margin-bottom: 40px;
+                        justify-content: center;
+                    }
+                }
+                &:nth-child(3),
+                &:nth-child(4),
+                &:nth-child(5) {
+                    position: relative;
+                    @media (max-width: 992px) {
+                        &:before {
+                            font-weight: bold;
+                            font-size: rem(12);
+                            margin-bottom: 6px;
+                            color: #303134;
+                            display: block;
+                            position: absolute;
+                            left: 0;
+                            bottom: 100%;
+                        }
+                    }
+                }
+                &:nth-child(3) {
+                    width: cw(284, 1182);
+                    padding-right: 10px;
+                    @media (max-width: 992px) {
+                        width: auto;
+                        padding-right: 0;
+                        margin-right: 15px;
+                        &:before {
+                            content: 'Отзывы:';
+                        }
+                    }
+                }
+                &:nth-child(4) {
+                    width: calc(((428 / 1182) * 100%) - 115px);
+                    padding-right: 10px;
+                    @media (max-width: 992px) {
+                        width: auto;
+                        padding-right: 0;
+                        margin-right: 15px;
+                        &:before {
+                            content: 'Оценка:';
+                        }
+                    }
+                }
+                &:nth-child(5) {
+                    width: 115px;
+                    @media (max-width: 992px) {
+                        width: auto;
+                        &:before {
+                            content: 'Рейтинг:';
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

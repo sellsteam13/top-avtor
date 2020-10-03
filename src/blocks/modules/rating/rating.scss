@@ -1,0 +1,138 @@
+.rating {
+    padding: 25px 0 50px;
+    @media (max-width: 992px) {
+        padding: 30px 0 45px;
+    }
+    &__title {
+        margin-bottom: 35px;
+        font-weight: bold;
+        font-size: rem(37);
+        color: #1D1D26;
+        @media (max-width: 992px) {
+            font-size: rem(23);
+        }
+    }
+    &-table {
+        .t-head {
+            @media (max-width: 992px) {
+                display: none;
+            }
+        }
+        .t-row {
+            @media (max-width: 992px) {
+                position: relative;
+                flex-direction: column;
+                padding: 24px 20px 38px;
+                margin: 0 -20px;
+                &:last-child {
+                    border-bottom: none !important;
+                    padding-bottom: 0;
+                }
+                .def-table {
+                    &-company {
+                        margin-bottom: 10px;
+                        max-width: calc(100vw - 40px);
+                        &__avatar {
+                            width: 30px;
+                            height: 30px;
+                            padding: 5px;
+                            margin-right: 13px;
+                        }
+                        &__link {
+                            font-size: rem(16);
+                        }
+                    }
+                }
+            }
+            .t-item {
+                &:nth-child(1) {
+                    width: 70px;
+                    @media (max-width: 992px) {
+                        position: absolute;
+                        top: 0;
+                        transform: translate(-50%, -50%);
+                        background-color: $white;
+                        width: unset;
+                        padding: 0 13px;
+                        left: 50%;
+                    }
+                }
+                &:nth-child(2) {
+                    width: calc(((470 / 1182) * 100%) - 70px);
+                    @media (max-width: 992px) {
+                        width: 100%;
+                    }
+                }
+                &:nth-child(3) {
+                    width: cw(284, 1182);
+                    padding-right: 10px;
+                    @media (max-width: 992px) {
+                        width: 100%;
+                        padding-right: 0;
+                        margin-bottom: 13px;
+                        &:before {
+                            content: 'Отзывов:';
+                        }
+                    }
+                }
+                &:nth-child(4) {
+                    width: calc(((428 / 1182) * 100%) - 170px);
+                    padding-right: 10px;
+                    @media (max-width: 992px) {
+                        width: 100%;
+                        padding-right: 0;
+                        margin-bottom: 13px;
+                        &:before {
+                            content: 'Ср. оценка за работу:';
+                        }
+                    }
+                }
+                &:nth-child(5) {
+                    width: 170px;
+                    @media (max-width: 992px) {
+                        width: 100%;
+                        &:before {
+                            content: 'Место в рейтинге:';
+                        }
+                    }
+                }
+                &:nth-child(3),
+                &:nth-child(4),
+                &:nth-child(5) {
+                    @media (max-width: 992px) {
+                        &:before {
+                            width: 125px;
+                            font-weight: bold;
+                            font-size: rem(12);
+                            color: #303134;
+                            flex-shrink: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .t-head .t-row .t-item {
+            font-weight: bold;
+            font-size: rem(19);
+            color: #65686B;
+            &:hover {
+                text-decoration: underline;
+            }
+            &:nth-child(1) {
+                &:hover {
+                    text-decoration: unset;
+                }
+            }
+            &.is-sorted {
+                color: $black;
+                svg {
+                    transform: rotate(-180deg);
+                }
+            }
+            svg {
+                margin-left: 10px;
+                fill: $black;
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+/** colors **/
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --default: #262529;
+    --blue: #1998FF;
+    --orange: #E5A003;
+    --border: #E2EAF1;
+    --transition-speed: .275s;
+    --transition-timing-function: ease;
+}
+
+// scss vars
+$white: var(--white);
+$black: var(--black);
+$default: var(--default);
+$blue: var(--blue);
+$orange: var(--orange);
+$border: var(--border);
+$trans: var(--transition-speed) var(--transition-timing-function);

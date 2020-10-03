@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ТопАвтор вёрстка</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- connecting favicons -->
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <!-- connecting styles -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+    <!-- content wrapper -->
+    <div class="wrapper">
+
+        <!-- header -->
+        <header class="header header-another">
+    <nav class="header-fixed-bar">
+        <div class="header-fixed-bar-wrapper limiter">
+            <button class="header__hamburger is-mobile mobile-menu-trigger">
+                <img src="./img/icons/icon-burger.svg" alt="icon-burger">
+            </button>
+            <a href="#" class="header-fixed-bar__logo">
+                <img src="./img/default/logo.svg" alt="TopAvtor">
+            </a>
+            <ul class="header-fixed-bar-links right-aligned">
+                <li class="header-fixed-bar-links__item is-active">
+                    <a href="#">Рейтинг</a>
+                </li>
+                <li class="header-fixed-bar-links__item">
+                    <a href="#">Компании</a>
+                </li>
+                <li class="header-fixed-bar-links__item">
+                    <a href="#">Добавить отзыв</a>
+                </li>
+            </ul>
+            <div class="header-fixed-bar-auth">
+                <a href="#" class="def-btn def-btn--blue header-fixed-bar-auth__login trigger-login">Вход</a>
+                <a href="#" class="def-btn def-btn--orange header-fixed-bar-auth__reg trigger-reg">Регистрация</a>
+            </div>
+            <button class="header__auth is-mobile right-aligned trigger-login">
+                <img src="./img/icons/icon-user.svg" alt="icon-user">
+            </button>
+        </div>
+    </nav>
+    <section class="header-search">
+        <div class="header-search-wrapper limiter">
+            <h1 class="header-search__small-title">Поиск по компаниям</h1>
+            <div class="header-search-inner">
+                <form class="search-input is-rounded autocomplete-holder">
+    <img src="./img/icons/icon-search.svg" alt="icon-search" class="search-input__icon">
+    <input placeholder="Поиск компании по названию" type="text" class="search-input__inner autocomplete">
+    <span class="search-input__companies-count">1267 компаний</span>
+    <button type="submit" class="search-input__submit def-btn def-btn--rblue">найти</button>
+</form>
+            </div>
+        </div>
+    </section>
+</header>
+
+
+<div class="mobile-menu-wrapper">
+    <div class="mobile-menu is-mobile">
+        <div class="mobile-menu__close mobile-menu-trigger"></div>
+        <div class="mobile-menu__title">Меню сайта</div>
+        <nav class="mobile-menu-nav">
+            <a href="#" class="mobile-menu-nav__item">Главная</a>
+            <a href="#" class="mobile-menu-nav__item is-current">Рейтинг</a>
+            <a href="#" class="mobile-menu-nav__item">Компании</a>
+            <a href="#" class="mobile-menu-nav__item">Добавить отзыв</a>
+        </nav>
+    </div>
+</div>
+
+        <!-- main content -->
+        <main class="main">
+
+            <!-- breadcrumbs module -->
+            <nav class="breadcrumbs">
+    <div class="breadcrumbs-wrapper limiter">
+        <a href="#" class="breadcrumbs__item">Главная</a>
+        <a href="#" class="breadcrumbs__item is-current">Компания FastFine</a>
+    </div>
+</nav>
+
+            <!-- company module -->
+            <section class="company">
+    <div class="company-wrapper limiter">
+        <div class="company-main">
+            <nav class="company-main-nav">
+                <a href="#" class="company-main-nav__item is-active">О компании</a>
+                <a href="#" class="company-main-nav__item">Статистика</a>
+                <a href="#" class="company-main-nav__item">
+                    Отзывы студентов
+                    <span class="company-main-nav__item-counting">137</span>
+                </a>
+                <a href="#" class="company-main-nav__item">
+                    Отзывы авторов
+                    <span class="company-main-nav__item-counting">35</span>
+                </a>
+                <a href="#" class="company-main-nav__item">Промокоды</a>
+            </nav>
+            <div class="company-layout company-about">
+                <div class="company-preview">
+                    <div class="is-mobile company-preview__title">Все о компании FastFine ru (Фаст Файн)</div>
+                    <div class="is-mobile company-preview__est">Дата основания: 2019 год</div>
+                    <div class="company-preview__logo">
+                        <img src="./img/pics/logo.png" alt="">
+                    </div>
+                    <a href="#" class="company-preview__btn def-btn def-btn--trans">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.0625 0.937627C11.8126 -0.312299 9.77875 -0.312557 8.52865 0.936939L6.55108 2.91537L7.46404 3.82816L9.44221 1.84955C10.1891 1.10392 11.4032 1.10418 12.1496 1.85058C12.8961 2.59699 12.896 3.8118 12.1496 4.55847L9.18133 7.52655C8.81975 7.88822 8.33895 8.08739 7.82752 8.08739C7.31608 8.08739 6.8352 7.88822 6.47361 7.52655L5.56066 8.43942C6.16617 9.04493 6.97128 9.37846 7.8276 9.37846C8.68392 9.37846 9.48904 9.04493 10.0943 8.43942L13.0626 5.47134C14.3123 4.22116 14.3123 2.1873 13.0625 0.937627Z" stroke="none"/>
+                            <path d="M4.55826 12.15C3.81159 12.8962 2.59687 12.896 1.85037 12.1495C1.10387 11.4029 1.10387 10.1879 1.85028 9.44129L4.81819 6.47338C5.56486 5.7268 6.77967 5.7268 7.52616 6.47338L8.43921 5.56051C7.18911 4.31049 5.15525 4.31041 3.90532 5.56051L0.93724 8.52842C-0.312428 9.77843 -0.312428 11.8124 0.937326 13.0625C1.56246 13.6875 2.38341 14.0001 3.20453 14C4.0253 14 4.84625 13.6876 5.47104 13.0629L7.44947 11.084L6.53643 10.1712L4.55826 12.15Z" stroke="none"/>
+                        </svg>
+                        <span>Договор</span>
+                    </a>
+                </div>
+                <aside class="company-aside is-mobile">
+                    <div class="company-aside-rate">
+                        <!-- другой рейт - is-bad , is-semi -->
+                        <div class="company-aside-rate__label is-good">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                            </svg>
+                            <span>4.9</span>
+                        </div>
+                        <div class="company-aside-rate__text">
+                            Средняя оценка клиентов основана на <a href="#">20 отзывах</a>
+                        </div>
+                    </div>
+                    <a href="www.fastfine.ru" target="_blank" class="company-aside__item company-aside__item--website">www.fastfine.ru</a>
+                    <address class="company-aside__item company-aside__item--address">г. Москва, ул. Садовническая, д. 82</address>
+                    <a href="tel+123456789" class="company-aside__item company-aside__item--tel">+7 495 668 13 54</a>
+                    <a href="mail:example@mail.com" class="company-aside__item company-aside__item--mail">info@fastfine.ru</a>
+                    <a href="#" class="def-btn def-btn--orange company-aside__btn company-aside__btn--review">Написать отзыв</a>
+                    <a href="#" class="def-btn def-btn--blue company-aside__btn company-aside__btn--order">Оставить заявку</a>
+                </aside>
+                <div class="company-content">
+                    <h1 class="company__title">Все о компании FastFine ru (Фаст Файн)</h1>
+                    <div class="company__subtitle">Дата основания: 2019 год</div>
+                    <div class="company__text">
+                        <p>Выполнение студенческих работ нашими специалистами гарантирует вам получение высокой отметки и отсутствие сложностей со сдачей преподавателю. Все наши авторы – специалисты своего дела, так что вы получаете возможность заказать
+                            выполнение студенческой работы у настоящих профессионалов. Мы сопровождаем работу в течение выбранного вами гарантийного срока. Все коррективы вносятся оперативно.</p>
+                    </div>
+                    <div class="company-cities">
+                        <div class="company-cities__title">Работает в:</div>
+                        <div class="def-btn def-btn--white company-cities__item">Москва</div>
+                        <div class="def-btn def-btn--white company-cities__item">Санкт-Петербург</div>
+                        <div class="def-btn def-btn--white company-cities__item">Уфа</div>
+                        <div class="def-btn def-btn--white company-cities__item">Волгоград</div>
+                        <div class="def-btn def-btn--white company-cities__item">Самара</div>
+                        <div class="def-btn def-btn--white company-cities__item">Тюмень</div>
+                        <div class="def-btn def-btn--white company-cities__item">Нижний Новгород</div>
+                        <div class="def-btn def-btn--white company-cities__item">Киев</div>
+                    </div>
+                    <div class="company-funcs">
+                        <div class="company-funcs__item"><img src="./img/icons/rounded-check.svg" alt="icon"><span>Официальная
+                            регистрация</span></div>
+                        <div class="company-funcs__item"><img src="./img/icons/rounded-cross.svg" alt="icon"><span>Договор,
+                            юридические
+                            гарантии</span></div>
+                        <div class="company-funcs__item"><img src="./img/icons/rounded-check.svg" alt="icon"><span>Реальные
+                            офисы</span></div>
+                        <div class="company-funcs__item"><img src="./img/icons/rounded-check.svg" alt="icon"><span>Бесплатная
+                            горячая линия</span></div>
+                        <div class="company-funcs__item"><img src="./img/icons/rounded-check.svg" alt="icon"><span>Личный
+                            кабинет</span></div>
+                        <div class="company-funcs__item"><img src="./img/icons/rounded-check.svg" alt="icon"><span>Общение
+                            с автором</span></div>
+                        <div class="company-funcs__item"><img src="./img/icons/rounded-check.svg" alt="icon"><span>Бесплатные
+                            доработки</span></div>
+                        <div class="company-funcs__item"><img src="./img/icons/rounded-cross.svg" alt="icon"><span>Гарантия
+                            на работы</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <aside class="company-aside">
+            <div class="company-aside-rate">
+                <!-- другой рейт - is-bad , is-semi -->
+                <div class="company-aside-rate__label is-good">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                    </svg>
+                    <span>4.9</span>
+                </div>
+                <div class="company-aside-rate__text">
+                    Средняя оценка клиентов основана на <a href="#">20 отзывах</a>
+                </div>
+            </div>
+            <a href="www.fastfine.ru" target="_blank" class="company-aside__item company-aside__item--website">www.fastfine.ru</a>
+            <address class="company-aside__item company-aside__item--address">г. Москва, ул. Садовническая, д. 82</address>
+            <a href="tel+123456789" class="company-aside__item company-aside__item--tel">+7 495 668 13 54</a>
+            <a href="mail:example@mail.com" class="company-aside__item company-aside__item--mail">info@fastfine.ru</a>
+            <a href="#" class="def-btn def-btn--orange company-aside__btn company-aside__btn--review">Написать отзыв</a>
+            <a href="#" class="def-btn def-btn--blue company-aside__btn company-aside__btn--order">Оставить заявку</a>
+        </aside>
+    </div>
+</section>
+
+            <!-- main-reviews module -->
+            <section class="main-reviews">
+    <div class="main-reviews-wrapper limiter">
+        <div class="main-reviews-list">
+            <div class="main-reviews-type">
+                <div class="tabs">
+                    <a href="#" class="tabs__item is-active">Отзывы студентов</a>
+                    <a href="#" class="tabs__item">Отзывы автров</a>
+                </div>
+            </div>
+            <div class="main-reviews-heading">
+                <h2 class="main-reviews-heading__title">Отзывы от студентов</h2>
+                <div class="main-reviews-heading__sort right-aligned">
+                    <div class="tabs">
+                        <a href="#" class="tabs__item sort__btn sort__btn-text">Сортировать по:</a>
+                        <button class="tabs__item sort__btn is-active">
+                            <span>дате</span>
+                            <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.64645 4.35355C3.84171 4.54882 4.15829 4.54882 4.35355 4.35355L7.53553 1.17157C7.7308 0.976311 7.7308 0.659728 7.53553 0.464466C7.34027 0.269204 7.02369 0.269204 6.82843 0.464466L4 3.29289L1.17157 0.464466C0.976311 0.269204 0.659728 0.269204 0.464466 0.464466C0.269204 0.659728 0.269204 0.976311 0.464466 1.17157L3.64645 4.35355ZM3.5 3L3.5 4L4.5 4L4.5 3L3.5 3Z" stroke="none"/>
+                            </svg>
+                        </button>
+                        <button class="tabs__item sort__btn">
+                            <span>рейтингу</span>
+                            <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.64645 4.35355C3.84171 4.54882 4.15829 4.54882 4.35355 4.35355L7.53553 1.17157C7.7308 0.976311 7.7308 0.659728 7.53553 0.464466C7.34027 0.269204 7.02369 0.269204 6.82843 0.464466L4 3.29289L1.17157 0.464466C0.976311 0.269204 0.659728 0.269204 0.464466 0.464466C0.269204 0.659728 0.269204 0.976311 0.464466 1.17157L3.64645 4.35355ZM3.5 3L3.5 4L4.5 4L4.5 3L3.5 3Z" stroke="none"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="main-reviews-list-inner">
+                <!-- review -->
+                <div class="review">
+    <div class="review__avatar">Ж</div>
+    <div class="review__author">Жанна Кириченко</div>
+    <div class="review__info">
+        <span>22 часа назад</span>
+        <span>О компании ДипломТайм (DiplomTime)</span>
+    </div>
+    <div class="review-rate">
+        <div class="review-rate-stars">
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+        </div>
+        <div class="review-rate__number">4.8 из 5</div>
+    </div>
+    <div class="review__text">Всем добрый вечер. Решился написать не большой отзыв о данной порядочной компании и её специалистах. В компанию Диплом Ворк я обратился по поводу написания дипломной работы. Обратится сюда мне рекомендовали ребята по группе, отзывались, как о приличной
+        и добросовестной компании. </div>
+</div>
+                <!-- review -->
+                <div class="review">
+    <div class="review__avatar">Ж</div>
+    <div class="review__author">Жанна Кириченко</div>
+    <div class="review__info">
+        <span>22 часа назад</span>
+        <span>О компании ДипломТайм (DiplomTime)</span>
+    </div>
+    <div class="review-rate">
+        <div class="review-rate-stars">
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+        </div>
+        <div class="review-rate__number">4.8 из 5</div>
+    </div>
+    <div class="review__text">Всем добрый вечер. Решился написать не большой отзыв о данной порядочной компании и её специалистах. В компанию Диплом Ворк я обратился по поводу написания дипломной работы. Обратится сюда мне рекомендовали ребята по группе, отзывались, как о приличной
+        и добросовестной компании. </div>
+</div>
+                <!-- review -->
+                <div class="review">
+    <div class="review__avatar">Ж</div>
+    <div class="review__author">Жанна Кириченко</div>
+    <div class="review__info">
+        <span>22 часа назад</span>
+        <span>О компании ДипломТайм (DiplomTime)</span>
+    </div>
+    <div class="review-rate">
+        <div class="review-rate-stars">
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+        </div>
+        <div class="review-rate__number">4.8 из 5</div>
+    </div>
+    <div class="review__text">Всем добрый вечер. Решился написать не большой отзыв о данной порядочной компании и её специалистах. В компанию Диплом Ворк я обратился по поводу написания дипломной работы. Обратится сюда мне рекомендовали ребята по группе, отзывались, как о приличной
+        и добросовестной компании. </div>
+</div>
+                <!-- review -->
+                <div class="review">
+    <div class="review__avatar">Ж</div>
+    <div class="review__author">Жанна Кириченко</div>
+    <div class="review__info">
+        <span>22 часа назад</span>
+        <span>О компании ДипломТайм (DiplomTime)</span>
+    </div>
+    <div class="review-rate">
+        <div class="review-rate-stars">
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+        </div>
+        <div class="review-rate__number">4.8 из 5</div>
+    </div>
+    <div class="review__text">Всем добрый вечер. Решился написать не большой отзыв о данной порядочной компании и её специалистах. В компанию Диплом Ворк я обратился по поводу написания дипломной работы. Обратится сюда мне рекомендовали ребята по группе, отзывались, как о приличной
+        и добросовестной компании. </div>
+</div>
+                <!-- review -->
+                <div class="review">
+    <div class="review__avatar">Ж</div>
+    <div class="review__author">Жанна Кириченко</div>
+    <div class="review__info">
+        <span>22 часа назад</span>
+        <span>О компании ДипломТайм (DiplomTime)</span>
+    </div>
+    <div class="review-rate">
+        <div class="review-rate-stars">
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+        </div>
+        <div class="review-rate__number">4.8 из 5</div>
+    </div>
+    <div class="review__text">Всем добрый вечер. Решился написать не большой отзыв о данной порядочной компании и её специалистах. В компанию Диплом Ворк я обратился по поводу написания дипломной работы. Обратится сюда мне рекомендовали ребята по группе, отзывались, как о приличной
+        и добросовестной компании. </div>
+</div>
+                <!-- review -->
+                <div class="review">
+    <div class="review__avatar">Ж</div>
+    <div class="review__author">Жанна Кириченко</div>
+    <div class="review__info">
+        <span>22 часа назад</span>
+        <span>О компании ДипломТайм (DiplomTime)</span>
+    </div>
+    <div class="review-rate">
+        <div class="review-rate-stars">
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+        </div>
+        <div class="review-rate__number">4.8 из 5</div>
+    </div>
+    <div class="review__text">Всем добрый вечер. Решился написать не большой отзыв о данной порядочной компании и её специалистах. В компанию Диплом Ворк я обратился по поводу написания дипломной работы. Обратится сюда мне рекомендовали ребята по группе, отзывались, как о приличной
+        и добросовестной компании. </div>
+</div>
+                <!-- review -->
+                <div class="review">
+    <div class="review__avatar">Ж</div>
+    <div class="review__author">Жанна Кириченко</div>
+    <div class="review__info">
+        <span>22 часа назад</span>
+        <span>О компании ДипломТайм (DiplomTime)</span>
+    </div>
+    <div class="review-rate">
+        <div class="review-rate-stars">
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+        </div>
+        <div class="review-rate__number">4.8 из 5</div>
+    </div>
+    <div class="review__text">Всем добрый вечер. Решился написать не большой отзыв о данной порядочной компании и её специалистах. В компанию Диплом Ворк я обратился по поводу написания дипломной работы. Обратится сюда мне рекомендовали ребята по группе, отзывались, как о приличной
+        и добросовестной компании. </div>
+</div>
+                <!-- review -->
+                <div class="review">
+    <div class="review__avatar">Ж</div>
+    <div class="review__author">Жанна Кириченко</div>
+    <div class="review__info">
+        <span>22 часа назад</span>
+        <span>О компании ДипломТайм (DiplomTime)</span>
+    </div>
+    <div class="review-rate">
+        <div class="review-rate-stars">
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+        </div>
+        <div class="review-rate__number">4.8 из 5</div>
+    </div>
+    <div class="review__text">Всем добрый вечер. Решился написать не большой отзыв о данной порядочной компании и её специалистах. В компанию Диплом Ворк я обратился по поводу написания дипломной работы. Обратится сюда мне рекомендовали ребята по группе, отзывались, как о приличной
+        и добросовестной компании. </div>
+</div>
+            </div>
+            <form action="#" class="main-reviews-new">
+                <div class="main-reviews-new__title">Написать отзыв</div>
+                <div class="input-block input-block-def  main-reviews-new__item main-reviews-new__item--halfed">
+                    <input type="text" class="input-block__inner" placeholder="Ваше имя">
+                    <div class="input-block__error">Неверное значение!</div>
+                </div>
+                <div class="input-block input-block-def  main-reviews-new__item main-reviews-new__item--halfed">
+                    <input type="text" class="input-block__inner" placeholder="Email">
+                    <div class="input-block__error">Неверное значение!</div>
+                </div>
+                <div class="input-block input-block-def  main-reviews-new__item main-reviews-new__item">
+                    <textarea class="input-block__textarea" placeholder="Текст отзыва"></textarea>
+                    <div class="input-block__error">Неверное значение!</div>
+                </div>
+                <div class="main-reviews-new__subtitle">Оцените работу компании:</div>
+                <div class="main-reviews-new__block">
+                    <div class="main-reviews-new__block-title">Цена:</div>
+                    <div class="main-reviews-new__block-content tabs">
+                        <a href="#" class="tabs__item is-active">Низкая</a>
+                        <a href="#" class="tabs__item">Средняя</a>
+                        <a href="#" class="tabs__item">Высокая</a>
+                    </div>
+                </div>
+                <div class="main-reviews-new__block">
+                    <div class="main-reviews-new__block-title">Сроки работы:</div>
+                    <div class="main-reviews-new__block-content tabs">
+                        <a href="#" class="tabs__item">Вовремя</a>
+                        <a href="#" class="tabs__item is-active">Ранше срока</a>
+                        <a href="#" class="tabs__item">С задержкой</a>
+                    </div>
+                </div>
+                <div class="main-reviews-new__block main-reviews-new__block-numbers">
+                    <div class="main-reviews-new__block-title">Качество работы:</div>
+                    <div class="main-reviews-new__block-content tabs">
+                        <a href="#" class="tabs__item is-active">1</a>
+                        <a href="#" class="tabs__item">2</a>
+                        <a href="#" class="tabs__item">3</a>
+                        <a href="#" class="tabs__item">4</a>
+                        <a href="#" class="tabs__item">5</a>
+                    </div>
+                </div>
+                <div class="main-reviews-new__block main-reviews-new__block-numbers">
+                    <div class="main-reviews-new__block-title">Сервис</div>
+                    <div class="main-reviews-new__block-content tabs">
+                        <a href="#" class="tabs__item is-active">1</a>
+                        <a href="#" class="tabs__item">2</a>
+                        <a href="#" class="tabs__item">3</a>
+                        <a href="#" class="tabs__item">4</a>
+                        <a href="#" class="tabs__item">5</a>
+                    </div>
+                </div>
+                <div class="main-reviews-new__submit"><button type="submit" class="def-btn def-btn--orange">Оставить отзыв</button></div>
+            </form>
+        </div>
+        <aside class="main-reviews-aside">
+            <div class="main-reviews-aside__title">
+                <div class="main-reviews-aside__title-count">10</div>
+                <span>Топ 10 компаний</span>
+            </div>
+            <div class="main-reviews-aside-list">
+                <div class="main-reviews-aside__company is-first">
+                    <div class="main-reviews-aside__company-place">
+                        #1
+                    </div>
+                    <img src="./img/pics/logo.png" alt="example">
+                </div>
+                <div class="main-reviews-aside__company is-second">
+                    <div class="main-reviews-aside__company-place">
+                        #2
+                    </div>
+                    <img src="./img/pics/logo.png" alt="example">
+                </div>
+                <div class="main-reviews-aside__company is-third">
+                    <div class="main-reviews-aside__company-place">
+                        #3
+                    </div>
+                    <img src="./img/pics/logo.png" alt="example">
+                </div>
+                <div class="main-reviews-aside__company">
+                    <div class="main-reviews-aside__company-place">
+                        #4
+                    </div>
+                    <img src="./img/pics/logo.png" alt="example">
+                </div>
+                <div class="main-reviews-aside__company">
+                    <div class="main-reviews-aside__company-place">
+                        #5
+                    </div>
+                    <img src="./img/pics/logo.png" alt="example">
+                </div>
+                <div class="main-reviews-aside__company">
+                    <div class="main-reviews-aside__company-place">
+                        #6
+                    </div>
+                    <img src="./img/pics/logo.png" alt="example">
+                </div>
+                <div class="main-reviews-aside__company">
+                    <div class="main-reviews-aside__company-place">
+                        #7
+                    </div>
+                    <img src="./img/pics/logo.png" alt="example">
+                </div>
+                <div class="main-reviews-aside__company">
+                    <div class="main-reviews-aside__company-place">
+                        #8
+                    </div>
+                    <img src="./img/pics/logo.png" alt="example">
+                </div>
+                <div class="main-reviews-aside__company">
+                    <div class="main-reviews-aside__company-place">
+                        #9
+                    </div>
+                    <img src="./img/pics/logo.png" alt="example">
+                </div>
+                <div class="main-reviews-aside__company">
+                    <div class="main-reviews-aside__company-place">
+                        #10
+                    </div>
+                    <img src="./img/pics/logo.png" alt="example">
+                </div>
+            </div>
+            <div class="is-mobile main-reviews-aside-controls">
+                <button class="main-reviews-aside__prev main-reviews-aside__arrow">
+                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.17007 0L9.21908 1.04901L2.83983 7.4283H19V8.91185H2.83983L9.21908 15.2911L8.17007 16.3401L0 8.17008L8.17007 0Z" stroke="none"/>
+                    </svg>
+                </button>
+                <div class="main-reviews-aside-controls__curr">
+                    1
+                </div>
+                <button class="main-reviews-aside__next main-reviews-aside__arrow">
+                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.17007 0L9.21908 1.04901L2.83983 7.4283H19V8.91185H2.83983L9.21908 15.2911L8.17007 16.3401L0 8.17008L8.17007 0Z" stroke="none"/>
+                    </svg>
+                </button>
+            </div>
+        </aside>
+    </div>
+</section>
+
+            <!-- descr module -->
+            <div class="descr">
+    <div class="descr-wrapper limiter">
+        <div class="descr-item">
+            <div class="descr-item__heading">
+                <div class="descr-item__heading-icon">
+                    <img src="./img/default/descr/descr1.svg" alt="icon">
+                </div>
+                <h3 class="descr-item__heading-title">
+                    Где заказать диплом или курсовую?
+                </h3>
+            </div>
+            <div class="descr-item__text">
+                <p>
+                    Это первый вопрос, который возникает при принятии такого решения.
+                </p>
+                <p>
+                    Наш портал поможет определиться с выбором исполнителя Вашей курсовой или дипломной работы. Для этого мы систематизировали всю информацию о рефератных компаниях, которая постоянно проверяется и уточняется.
+                </p>
+                <p>
+                    Вы можете узнать, есть ли у компании: официальная регистрация, договор, юридические гарантии, офис и в каком городе, бесплатная горячая линия, личный кабинет, общение с автором, бесплатные доработки и в течение какого времени, какие преимущества есть
+                    у компании, а какие недостатки.
+                </p>
+            </div>
+        </div>
+        <div class="descr-item">
+            <div class="descr-item__heading">
+                <div class="descr-item__heading-icon">
+                    <img src="./img/default/descr/descr2.svg" alt="icon">
+                </div>
+                <h3 class="descr-item__heading-title">Рейтинги рефератных <br> компаний</h3>
+            </div>
+            <div class="descr-item__text">
+                <p>
+                    Также нами разработана многофакторная система независимых рейтингов, которая отражает популярность компаний, степень доверия к ним пользователей. Мы проводим большую работу с отзывами, которые оставляют пользователи на различных отзывных сайтах, в том
+                    числе и на нашем.
+                </p>
+                <p>
+                    Во-первых, мы собираем все эти отзывы и размещаем на своём портале, чтобы Вам не приходилось тратить время на сбор информации.
+                </p>
+                <p>
+                    Во-вторых, разработанный нами алгоритм выявляет ложные и достоверные отзывы, отзывы конкурентов и недоброжелателей.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </main>
+
+        <!-- footer -->
+        <footer class="footer">
+    <div class="footer-wrapper limiter">
+        <div class="footer-about">
+            <a href="#" class="footer-about__logo">
+                <img src="./img/default/logo.svg" alt="TopAvtor">
+            </a>
+            <div class="footer-about__text">Самые честные рейтинг и отзывы в интернете о рефератных компаниях. Более 1200 компаний в нашей базе позволят выбрать лучшую.</div>
+        </div>
+        <nav class="footer-nav">
+            <ul class="footer-nav-list">
+                <li class="footer-nav__link"><a href="#">Главная</a></li>
+                <li class="footer-nav__link">
+                    <a href="#">Вход</a>
+                </li>
+                <li class="footer-nav__link">
+                    <a href="#">Рейтинг</a>
+                </li>
+                <li class="footer-nav__link">
+                    <a href="#">Регистрация</a>
+                </li>
+                <li class="footer-nav__link">
+                    <a href="#">Компании</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer-manage">
+            <div class="footer-manage-socials">
+                <a href="#" class="footer-manage-socials__link is-vk">
+                    <img src="./img/icons/icon-vk.svg" alt="icon-vk">
+                </a>
+                <a href="#" class="footer-manage-socials__link is-twitter">
+                    <img src="./img/icons/icon-twitter.svg" alt="icon-twitter">
+                </a>
+                <a href="#" class="footer-manage-socials__link is-fb">
+                    <img src="./img/icons/icon-fb.svg" alt="icon-fb">
+                </a>
+            </div>
+            <a href="#" class="def-btn def-btn--orange footer-manage__add-review">Добавить отзыв</a>
+            <div class="footer-manage__copyrights">© 2020 TopAvtor - Честные отзывы о рефератных компаниях</div>
+        </div>
+    </div>
+</footer>
+
+    </div>
+
+    <!-- modals module -->
+    <div class="overlay">
+    <div class="modal modal-thanks">
+        <div class="modal-thanks__title">Спасибо за отзыв!</div>
+        <div class="modal-thanks__text">Ваш отзыв о компании добавлен. После проверки модератором он будет добавлен на сайт</div>
+        <button class="modal-thanks__btn def-btn def-btn--orange" onclick="closeModal(document.querySelector('.modal-thanks'))">Закрыть</button>
+        <button class="modal-close"></button>
+    </div>
+    <div class="modal modal-auth modal-reg">
+        <div class="form modal-auth-form">
+            <div class="modal-auth__title">Регистрация</div>
+            <div class="input-block input-block-def  modal-auth__input">
+                <input type="text" class="input-block__inner" placeholder="Ваше имя">
+                <div class="input-block__error">Неверное значение!</div>
+            </div>
+            <div class="input-block input-block-def  modal-auth__input">
+                <input type="text" class="input-block__inner" placeholder="Email">
+                <div class="input-block__error">Неверное значение!</div>
+            </div>
+            <div class="input-block input-block-def  modal-auth__input">
+                <input type="password" class="input-block__inner" placeholder="Пароль">
+                <div class="input-block__error">Неверное значение!</div>
+            </div>
+            <div class="input-block input-block-def  modal-auth__input">
+                <input type="password" class="input-block__inner" placeholder="Повторите пароль">
+                <div class="input-block__error">Неверное значение!</div>
+            </div>
+            <button type="submit" class="def-btn def-btn--orange modal-auth__submit">Зарегистрироваться</button>
+        </div>
+        <div class="modal-close"></div>
+    </div>
+    <div class="modal modal-auth modal-login">
+        <div class="form modal-auth-form">
+            <div class="modal-auth__title">Вход в кабинет</div>
+            <div class="input-block input-block-def  modal-auth__input">
+                <input type="text" class="input-block__inner" placeholder="Email">
+                <div class="input-block__error">Неверное значение!</div>
+            </div>
+            <div class="input-block input-block-def  modal-auth__input">
+                <input type="password" class="input-block__inner" placeholder="Пароль">
+                <div class="input-block__error">Неверное значение!</div>
+            </div>
+            <button type="submit" class="def-btn def-btn--orange modal-auth__submit">Войти в личный кабинет</button>
+        </div>
+        <div class="modal-auth-btns">
+            <button class="modal-auth-btns__item" onclick="openModal(document.querySelector('.modal-restore'))">Забыли пароль?</button>
+            <button class="modal-auth-btns__item" onclick="openModal(document.querySelector('.modal-reg'))">Регистрация</button>
+        </div>
+        <div class="modal-close"></div>
+    </div>
+    <div class="modal modal-auth modal-restore">
+        <div class="form modal-auth-form">
+            <div class="modal-auth__title">Восстановить аккаунт</div>
+            <div class="input-block input-block-def  modal-auth__input">
+                <input type="text" class="input-block__inner" placeholder="Email">
+                <div class="input-block__error">Неверное значение!</div>
+            </div>
+            <button type="submit" class="def-btn def-btn--orange modal-auth__submit">Восстановить</button>
+        </div>
+        <div class="modal-auth-btns">
+            <button class="modal-auth-btns__item" onclick="openModal(document.querySelector('.modal-login'))">Вход</button>
+            <button class="modal-auth-btns__item" onclick="openModal(document.querySelector('.modal-reg'))">Регистрация</button>
+        </div>
+        <div class="modal-close"></div>
+    </div>
+    <div class="overlay-trigger"></div>
+</div>
+
+    <!-- connecting scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
+
+</body>
+
+</html>

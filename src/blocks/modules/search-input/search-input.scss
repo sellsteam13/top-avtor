@@ -1,0 +1,165 @@
+.search-input {
+    display: flex;
+    background-color: $white;
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 8px 19px 3px rgba(0, 0, 0, 0.09);
+    @media (max-width: 992px) {
+        background-color: transparent;
+        box-shadow: unset;
+        flex-wrap: wrap;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 19px;
+        transform: translateY(-50%);
+        @media (max-width: 992px) {
+            top: 17px;
+            left: 12px;
+            transform: translateY(0);
+        }
+    }
+    &__inner {
+        flex-grow: 1;
+        border: none;
+        border-radius: 50px 0 0 50px;
+        padding-left: 50px;
+        transition: border-radius $trans;
+        font-size: rem(15);
+        @media (max-width: 992px) {
+            width: 100%;
+            height: 45px;
+            padding: 0 40px;
+            border-radius: 50px;
+            max-width: 350px;
+            margin: 5px auto;
+        }
+        &::placeholder {
+            color: #767787;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    &__companies-count {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        font-size: rem(12);
+        color: #9697AF;
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+    &__submit {
+        width: 144px;
+        transition: border-radius $trans, background-color $trans, box-shadow $trans;
+        @media (max-width: 992px) {
+            width: 100%;
+            max-width: 350px;
+            margin: 5px auto;
+            height: 45px;
+        }
+    }
+    &.is-rounded {
+        height: 57px;
+        border-radius: 50px;
+        @media (max-width: 992px) {
+            height: auto;
+            border-radius: unset;
+        }
+        &.is-opened {
+            border-top-right-radius: 30px;
+            border-top-left-radius: 30px;
+            .search-input {
+                &__inner {
+                    border-top-left-radius: 30px;
+                    @media (max-width: 992px) {
+                        border-top-right-radius: 30px;
+                    }
+                }
+                &__submit {
+                    border-bottom-right-radius: 0;
+                    @media (max-width: 992px) {
+                        border-bottom-right-radius: 50px;
+                    }
+                }
+            }
+        }
+        #autoComplete_list {
+            border-radius: 0 0 30px 30px;
+            @media (max-width: 992px) {
+                top: 45px;
+            }
+        }
+    }
+    &.is-opened {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        .search-input__inner {
+            border-bottom-left-radius: 0;
+            transition: border-radius $trans;
+            @media (max-width: 992px) {
+                border-bottom-right-radius: 0;
+            }
+        }
+    }
+}
+
+.autocomplete-holder {
+    position: relative;
+    #autoComplete_list {
+        position: absolute;
+        top: 57px;
+        left: 0;
+        right: 0;
+        display: none;
+        background-color: $white;
+        width: 100%;
+        padding: 15px 0;
+        box-shadow: 0px 8px 19px 3px rgba(0, 0, 0, 0.09);
+    }
+    &.is-opened {
+        z-index: 3;
+        #autoComplete_list {
+            display: block;
+        }
+    }
+}
+
+.autoComplete_result {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    border: none !important;
+    border-bottom: 1px solid $border !important;
+    list-style: none;
+    text-align: left;
+    font-size: rem(16);
+    color: $default;
+    transition: all 0.1s ease-in-out;
+    background-color: #fff;
+    padding: 15px 30px;
+    &:last-child {
+        border-bottom: none !important;
+    }
+    &:hover {
+        background-color: darken(#fff, 3%);
+    }
+}
+
+.autoComplete_highlighted {
+    color: $orange;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+.no_result {
+    padding: 15px 0;
+    text-align: center;
+    font-size: rem(16);
+}

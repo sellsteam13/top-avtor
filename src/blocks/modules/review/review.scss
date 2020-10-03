@@ -1,0 +1,112 @@
+.review {
+    width: 100%;
+    position: relative;
+    padding-left: 105px;
+    @media (max-width: 992px) {
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    &__avatar {
+        width: 81px;
+        height: 81px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: rem(38);
+        color: $white;
+        background: #9EBEEF;
+        border-radius: 19px;
+        @media (max-width: 992px) {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            font-size: rem(18);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__author {
+        font-size: rem(23);
+        line-height: 110%;
+        color: #262B34;
+        margin: 0 0 5px;
+        padding-top: 8px;
+        @media (max-width: 992px) {
+            padding-left: 64px;
+            padding-top: 0;
+            font-size: rem(19);
+            margin-bottom: 3px;
+        }
+    }
+    &__info {
+        margin-bottom: 5px;
+        font-size: rem(14);
+        color: #4F5664;
+        @media (max-width: 992px) {
+            padding-left: 64px;
+            font-size: rem(12);
+            min-height: 30px;
+        }
+        span {
+            &:after {
+                content: '';
+                display: inline-block;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                margin: 0 3px 2px 7px;
+                background-color: #4F5664;
+            }
+            &:last-child {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+    &-rate {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        @media (max-width: 992px) {
+            order: 2;
+            margin: 15px 0 0;
+        }
+        &-stars {
+            display: flex;
+            margin-right: 10px;
+            &__item {
+                margin-right: 2px;
+                svg {
+                    fill: #EAEAEA;
+                }
+                &.is-filled svg {
+                    fill: #E5A003;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        &__number {
+            font-size: rem(12);
+            color: $black;
+        }
+    }
+    &__text {
+        font-size: rem(16);
+        line-height: 169%;
+        color: #262529;
+        @media (max-width: 992px) {
+            font-size: rem(15);
+        }
+    }
+}

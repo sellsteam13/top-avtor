@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ТопАвтор вёрстка</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- connecting favicons -->
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <!-- connecting styles -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+    <!-- content wrapper -->
+    <div class="wrapper">
+
+        <!-- header -->
+        <header class="header">
+    <nav class="header-fixed-bar">
+        <div class="header-fixed-bar-wrapper limiter">
+            <button class="header__hamburger is-mobile mobile-menu-trigger">
+                <img src="./img/icons/icon-burger.svg" alt="icon-burger">
+            </button>
+            <a href="#" class="header-fixed-bar__logo">
+                <img src="./img/default/logo.svg" alt="TopAvtor">
+            </a>
+            <ul class="header-fixed-bar-links right-aligned">
+                <li class="header-fixed-bar-links__item is-active">
+                    <a href="#">Рейтинг</a>
+                </li>
+                <li class="header-fixed-bar-links__item">
+                    <a href="#">Компании</a>
+                </li>
+                <li class="header-fixed-bar-links__item">
+                    <a href="#">Добавить отзыв</a>
+                </li>
+            </ul>
+            <div class="header-fixed-bar-auth">
+                <a href="#" class="def-btn def-btn--blue header-fixed-bar-auth__login trigger-login">Вход</a>
+                <a href="#" class="def-btn def-btn--orange header-fixed-bar-auth__reg trigger-reg">Регистрация</a>
+            </div>
+            <button class="header__auth is-mobile right-aligned trigger-login">
+                <img src="./img/icons/icon-user.svg" alt="icon-user">
+            </button>
+        </div>
+    </nav>
+    <section class="header-search">
+        <div class="header-search-wrapper limiter">
+            <h1 class="header-search__title">Онлайн-сервис ТопАвтор</h1>
+            <h2 class="header-search__subtitle">Самые честные рейтинг и отзывы в интернете о рефератных компаниях. Более 1200 компаний в нашей базе позволят выбрать лучшую.</h2>
+            <div class="header-search-inner">
+                <form class="search-input is-rounded autocomplete-holder">
+    <img src="./img/icons/icon-search.svg" alt="icon-search" class="search-input__icon">
+    <input placeholder="Поиск компании по названию" type="text" class="search-input__inner autocomplete">
+    <span class="search-input__companies-count">1267 компаний</span>
+    <button type="submit" class="search-input__submit def-btn def-btn--rblue">найти</button>
+</form>
+            </div>
+        </div>
+    </section>
+</header>
+
+
+<div class="mobile-menu-wrapper is-mobile">
+    <div class="mobile-menu">
+        <div class="mobile-menu__close mobile-menu-trigger"></div>
+        <div class="mobile-menu__title">Меню сайта</div>
+        <nav class="mobile-menu-nav">
+            <a href="#" class="mobile-menu-nav__item">Главная</a>
+            <a href="#" class="mobile-menu-nav__item is-current">Рейтинг</a>
+            <a href="#" class="mobile-menu-nav__item">Компании</a>
+            <a href="#" class="mobile-menu-nav__item">Добавить отзыв</a>
+        </nav>
+    </div>
+</div>
+
+        <!-- main content -->
+        <main class="main">
+
+            <!-- main-top module -->
+            <section class="main-top">
+    <div class="main-top-wrapper limiter">
+        <div class="main-top-heading">
+            <div class="main-top-heading__icon">10</div>
+            <h2 class="def-title main-top-heading__title">Топ 10 компаний</h2>
+            <div class="main-top-heading__subtitle">Топ 10 популярных компаний по рейтингу и отзывам</div>
+        </div>
+        <div class="main-top-table">
+            <div class="table def-table">
+                <div class="t-head">
+                    <div class="t-row">
+                        <div class="t-item">#</div>
+                        <div class="t-item">Компания</div>
+                        <div class="t-item">Всего отзывов</div>
+                        <div class="t-item">Средняя оценка</div>
+                        <div class="t-item">Рейтинг</div>
+                    </div>
+                </div>
+                <div class="t-body">
+                    <div class="t-row">
+                        <div class="t-item">
+                            <div class="def-table-place is-first">
+                                <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.3907 1.59901C12.5402 -0.427116 15.4597 -0.427118 16.6093 1.59901L18.7433 5.36038C19.1707 6.11357 19.9026 6.64536 20.751 6.81903L24.9877 7.6863C27.2699 8.15347 28.1721 10.9301 26.6004 12.6495L23.6825 15.8414C23.0983 16.4806 22.8187 17.341 22.9157 18.2015L23.4001 22.4989C23.661 24.8138 21.2991 26.5298 19.1782 25.5663L15.2408 23.7777C14.4524 23.4195 13.5476 23.4195 12.7592 23.7777L8.82184 25.5663C6.70092 26.5298 4.33899 24.8138 4.59992 22.4989L5.08432 18.2015C5.18131 17.341 4.90173 16.4806 4.31746 15.8414L1.39964 12.6495C-0.172091 10.9301 0.730083 8.15347 3.01227 7.6863L7.249 6.81903C8.09738 6.64536 8.82933 6.11357 9.25666 5.36038L11.3907 1.59901Z"/>
+                                </svg>
+                                <span>1</span>
+                            </div>
+                        </div>
+                        <div class="t-item def-table-company">
+                            <div class="def-table-company__avatar">
+                                <img src="./img/pics/company-logo.png" alt="">
+                            </div>
+                            <a href="#" class="def-table-company__link">Компания FastFine</a>
+                        </div>
+                        <div class="t-item">
+                            <div class="def-table-reviews">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.92107 0C3.1048 0 1.8602e-05 2.79426 1.8602e-05 6.22895C1.8602e-05 7.42952 0.379754 8.59249 1.1 9.59812C0.96366 11.1062 0.598228 12.2258 0.0676142 12.7562C-0.00251911 12.8263 -0.0200524 12.9336 0.0242423 13.0222C0.0634616 13.1013 0.144207 13.15 0.23072 13.15C0.241333 13.15 0.251945 13.1493 0.262788 13.1477C0.356222 13.1345 2.52666 12.8222 4.09659 11.916C4.98802 12.2756 5.93759 12.4579 6.92107 12.4579C10.7373 12.4579 13.8421 9.66364 13.8421 6.22895C13.8421 2.79426 10.7373 0 6.92107 0ZM3.69125 7.15175C3.18232 7.15175 2.76844 6.73788 2.76844 6.22895C2.76844 5.72002 3.18232 5.30614 3.69125 5.30614C4.20017 5.30614 4.61405 5.72002 4.61405 6.22895C4.61405 6.73788 4.20017 7.15175 3.69125 7.15175ZM6.92107 7.15175C6.41214 7.15175 5.99826 6.73788 5.99826 6.22895C5.99826 5.72002 6.41214 5.30614 6.92107 5.30614C7.43 5.30614 7.84388 5.72002 7.84388 6.22895C7.84388 6.73788 7.43 7.15175 6.92107 7.15175ZM10.1509 7.15175C9.64196 7.15175 9.22809 6.73788 9.22809 6.22895C9.22809 5.72002 9.64196 5.30614 10.1509 5.30614C10.6598 5.30614 11.0737 5.72002 11.0737 6.22895C11.0737 6.73788 10.6598 7.15175 10.1509 7.15175Z" stroke="none"/>
+                                </svg>
+                                <span>1 568</span>
+                            </div>
+                        </div>
+                        <div class="t-item">
+                            <div class="def-table-average is-good">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                                </svg>
+                                <span>1 568</span>
+                            </div>
+                        </div>
+                        <div class="t-item">
+                            <div class="def-table-rate is-good">
+                                <div class="def-table-rate__curr">
+                                    <span>2 247</span>
+                                    <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.64645 0.646446C3.84171 0.451184 4.15829 0.451184 4.35355 0.646446L7.53553 3.82843C7.7308 4.02369 7.7308 4.34027 7.53553 4.53553C7.34027 4.7308 7.02369 4.7308 6.82843 4.53553L4 1.70711L1.17157 4.53553C0.976311 4.7308 0.659728 4.7308 0.464466 4.53553C0.269204 4.34027 0.269204 4.02369 0.464466 3.82843L3.64645 0.646446ZM3.5 11L3.5 1H4.5L4.5 11H3.5Z" stroke="none"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="def-table__changes is-good">-1</div>
+                        </div>
+                    </div>
+                    <div class="t-row">
+                        <div class="t-item">
+                            <div class="def-table-place is-second">
+                                <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.3907 1.59901C12.5402 -0.427116 15.4597 -0.427118 16.6093 1.59901L18.7433 5.36038C19.1707 6.11357 19.9026 6.64536 20.751 6.81903L24.9877 7.6863C27.2699 8.15347 28.1721 10.9301 26.6004 12.6495L23.6825 15.8414C23.0983 16.4806 22.8187 17.341 22.9157 18.2015L23.4001 22.4989C23.661 24.8138 21.2991 26.5298 19.1782 25.5663L15.2408 23.7777C14.4524 23.4195 13.5476 23.4195 12.7592 23.7777L8.82184 25.5663C6.70092 26.5298 4.33899 24.8138 4.59992 22.4989L5.08432 18.2015C5.18131 17.341 4.90173 16.4806 4.31746 15.8414L1.39964 12.6495C-0.172091 10.9301 0.730083 8.15347 3.01227 7.6863L7.249 6.81903C8.09738 6.64536 8.82933 6.11357 9.25666 5.36038L11.3907 1.59901Z"/>
+                                </svg>
+                                <span>2</span>
+                            </div>
+                        </div>
+                        <div class="t-item def-table-company">
+                            <div class="def-table-company__avatar">
+                                <img src="./img/pics/company-logo.png" alt="">
+                            </div>
+                            <a href="#" class="def-table-company__link">Компания FastFine</a>
+                        </div>
+                        <div class="t-item">
+                            <div class="def-table-reviews">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.92107 0C3.1048 0 1.8602e-05 2.79426 1.8602e-05 6.22895C1.8602e-05 7.42952 0.379754 8.59249 1.1 9.59812C0.96366 11.1062 0.598228 12.2258 0.0676142 12.7562C-0.00251911 12.8263 -0.0200524 12.9336 0.0242423 13.0222C0.0634616 13.1013 0.144207 13.15 0.23072 13.15C0.241333 13.15 0.251945 13.1493 0.262788 13.1477C0.356222 13.1345 2.52666 12.8222 4.09659 11.916C4.98802 12.2756 5.93759 12.4579 6.92107 12.4579C10.7373 12.4579 13.8421 9.66364 13.8421 6.22895C13.8421 2.79426 10.7373 0 6.92107 0ZM3.69125 7.15175C3.18232 7.15175 2.76844 6.73788 2.76844 6.22895C2.76844 5.72002 3.18232 5.30614 3.69125 5.30614C4.20017 5.30614 4.61405 5.72002 4.61405 6.22895C4.61405 6.73788 4.20017 7.15175 3.69125 7.15175ZM6.92107 7.15175C6.41214 7.15175 5.99826 6.73788 5.99826 6.22895C5.99826 5.72002 6.41214 5.30614 6.92107 5.30614C7.43 5.30614 7.84388 5.72002 7.84388 6.22895C7.84388 6.73788 7.43 7.15175 6.92107 7.15175ZM10.1509 7.15175C9.64196 7.15175 9.22809 6.73788 9.22809 6.22895C9.22809 5.72002 9.64196 5.30614 10.1509 5.30614C10.6598 5.30614 11.0737 5.72002 11.0737 6.22895C11.0737 6.73788 10.6598 7.15175 10.1509 7.15175Z" stroke="none"/>
+                                </svg>
+                                <span>1 568</span>
+                            </div>
+                        </div>
+                        <div class="t-item">
+                            <div class="def-table-average is-good">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                                </svg>
+                                <span>1 568</span>
+                            </div>
+                        </div>
+                        <div class="t-item">
+                            <div class="def-table-rate is-bad">
+                                <div class="def-table-rate__curr">
+                                    <span>2 247</span>
+                                    <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.64645 0.646446C3.84171 0.451184 4.15829 0.451184 4.35355 0.646446L7.53553 3.82843C7.7308 4.02369 7.7308 4.34027 7.53553 4.53553C7.34027 4.7308 7.02369 4.7308 6.82843 4.53553L4 1.70711L1.17157 4.53553C0.976311 4.7308 0.659728 4.7308 0.464466 4.53553C0.269204 4.34027 0.269204 4.02369 0.464466 3.82843L3.64645 0.646446ZM3.5 11L3.5 1H4.5L4.5 11H3.5Z" stroke="none"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="def-table__changes is-bad">-1</div>
+                        </div>
+                    </div>
+                    <div class="t-row">
+                        <div class="t-item">
+                            <div class="def-table-place is-third">
+                                <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.3907 1.59901C12.5402 -0.427116 15.4597 -0.427118 16.6093 1.59901L18.7433 5.36038C19.1707 6.11357 19.9026 6.64536 20.751 6.81903L24.9877 7.6863C27.2699 8.15347 28.1721 10.9301 26.6004 12.6495L23.6825 15.8414C23.0983 16.4806 22.8187 17.341 22.9157 18.2015L23.4001 22.4989C23.661 24.8138 21.2991 26.5298 19.1782 25.5663L15.2408 23.7777C14.4524 23.4195 13.5476 23.4195 12.7592 23.7777L8.82184 25.5663C6.70092 26.5298 4.33899 24.8138 4.59992 22.4989L5.08432 18.2015C5.18131 17.341 4.90173 16.4806 4.31746 15.8414L1.39964 12.6495C-0.172091 10.9301 0.730083 8.15347 3.01227 7.6863L7.249 6.81903C8.09738 6.64536 8.82933 6.11357 9.25666 5.36038L11.3907 1.59901Z"/>
+                                </svg>
+                                <span>3</span>
+                            </div>
+                        </div>
+                        <div class="t-item def-table-company">
+                            <div class="def-table-company__avatar">
+                                <img src="./img/pics/company-logo.png" alt="">
+                            </div>
+                            <a href="#" class="def-table-company__link">Компания FastFine</a>
+                        </div>
+                        <div class="t-item">
+                            <div class="def-table-reviews">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.92107 0C3.1048 0 1.8602e-05 2.79426 1.8602e-05 6.22895C1.8602e-05 7.42952 0.379754 8.59249 1.1 9.59812C0.96366 11.1062 0.598228 12.2258 0.0676142 12.7562C-0.00251911 12.8263 -0.0200524 12.9336 0.0242423 13.0222C0.0634616 13.1013 0.144207 13.15 0.23072 13.15C0.241333 13.15 0.251945 13.1493 0.262788 13.1477C0.356222 13.1345 2.52666 12.8222 4.09659 11.916C4.98802 12.2756 5.93759 12.4579 6.92107 12.4579C10.7373 12.4579 13.8421 9.66364 13.8421 6.22895C13.8421 2.79426 10.7373 0 6.92107 0ZM3.69125 7.15175C3.18232 7.15175 2.76844 6.73788 2.76844 6.22895C2.76844 5.72002 3.18232 5.30614 3.69125 5.30614C4.20017 5.30614 4.61405 5.72002 4.61405 6.22895C4.61405 6.73788 4.20017 7.15175 3.69125 7.15175ZM6.92107 7.15175C6.41214 7.15175 5.99826 6.73788 5.99826 6.22895C5.99826 5.72002 6.41214 5.30614 6.92107 5.30614C7.43 5.30614 7.84388 5.72002 7.84388 6.22895C7.84388 6.73788 7.43 7.15175 6.92107 7.15175ZM10.1509 7.15175C9.64196 7.15175 9.22809 6.73788 9.22809 6.22895C9.22809 5.72002 9.64196 5.30614 10.1509 5.30614C10.6598 5.30614 11.0737 5.72002 11.0737 6.22895C11.0737 6.73788 10.6598 7.15175 10.1509 7.15175Z" stroke="none"/>
+                                </svg>
+                                <span>1 568</span>
+                            </div>
+                        </div>
+                        <div class="t-item">
+                            <div class="def-table-average is-good">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                                </svg>
+                                <span>1 568</span>
+                            </div>
+                        </div>
+                        <div class="t-item">
+                            <div class="def-table-rate is-bad">
+                                <div class="def-table-rate__curr">
+                                    <span>2 247</span>
+                                    <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.64645 0.646446C3.84171 0.451184 4.15829 0.451184 4.35355 0.646446L7.53553 3.82843C7.7308 4.02369 7.7308 4.34027 7.53553 4.53553C7.34027 4.7308 7.02369 4.7308 6.82843 4.53553L4 1.70711L1.17157 4.53553C0.976311 4.7308 0.659728 4.7308 0.464466 4.53553C0.269204 4.34027 0.269204 4.02369 0.464466 3.82843L3.64645 0.646446ZM3.5 11L3.5 1H4.5L4.5 11H3.5Z" stroke="none"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="def-table__changes is-bad">-1</div>
+                        </div>
+                    </div>
+                    <div class="t-row">
+                        <div class="t-item">
+                            <div class="def-table-place">
+                                <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.3907 1.59901C12.5402 -0.427116 15.4597 -0.427118 16.6093 1.59901L18.7433 5.36038C19.1707 6.11357 19.9026 6.64536 20.751 6.81903L24.9877 7.6863C27.2699 8.15347 28.1721 10.9301 26.6004 12.6495L23.6825 15.8414C23.0983 16.4806 22.8187 17.341 22.9157 18.2015L23.4001 22.4989C23.661 24.8138 21.2991 26.5298 19.1782 25.5663L15.2408 23.7777C14.4524 23.4195 13.5476 23.4195 12.7592 23.7777L8.82184 25.5663C6.70092 26.5298 4.33899 24.8138 4.59992 22.4989L5.08432 18.2015C5.18131 17.341 4.90173 16.4806 4.31746 15.8414L1.39964 12.6495C-0.172091 10.9301 0.730083 8.15347 3.01227 7.6863L7.249 6.81903C8.09738 6.64536 8.82933 6.11357 9.25666 5.36038L11.3907 1.59901Z"/>
+                                </svg>
+                                <span>4</span>
+                            </div>
+                        </div>
+                        <div class="t-item def-table-company">
+                            <div class="def-table-company__avatar">
+                                <img src="./img/pics/company-logo.png" alt="">
+                            </div>
+                            <a href="#" class="def-table-company__link">Компания FastFine</a>
+                        </div>
+                        <div class="t-item">
+                            <div class="def-table-reviews">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.92107 0C3.1048 0 1.8602e-05 2.79426 1.8602e-05 6.22895C1.8602e-05 7.42952 0.379754 8.59249 1.1 9.59812C0.96366 11.1062 0.598228 12.2258 0.0676142 12.7562C-0.00251911 12.8263 -0.0200524 12.9336 0.0242423 13.0222C0.0634616 13.1013 0.144207 13.15 0.23072 13.15C0.241333 13.15 0.251945 13.1493 0.262788 13.1477C0.356222 13.1345 2.52666 12.8222 4.09659 11.916C4.98802 12.2756 5.93759 12.4579 6.92107 12.4579C10.7373 12.4579 13.8421 9.66364 13.8421 6.22895C13.8421 2.79426 10.7373 0 6.92107 0ZM3.69125 7.15175C3.18232 7.15175 2.76844 6.73788 2.76844 6.22895C2.76844 5.72002 3.18232 5.30614 3.69125 5.30614C4.20017 5.30614 4.61405 5.72002 4.61405 6.22895C4.61405 6.73788 4.20017 7.15175 3.69125 7.15175ZM6.92107 7.15175C6.41214 7.15175 5.99826 6.73788 5.99826 6.22895C5.99826 5.72002 6.41214 5.30614 6.92107 5.30614C7.43 5.30614 7.84388 5.72002 7.84388 6.22895C7.84388 6.73788 7.43 7.15175 6.92107 7.15175ZM10.1509 7.15175C9.64196 7.15175 9.22809 6.73788 9.22809 6.22895C9.22809 5.72002 9.64196 5.30614 10.1509 5.30614C10.6598 5.30614 11.0737 5.72002 11.0737 6.22895C11.0737 6.73788 10.6598 7.15175 10.1509 7.15175Z" stroke="none"/>
+                                </svg>
+                                <span>1 568</span>
+                            </div>
+                        </div>
+                        <div class="t-item">
+                            <div class="def-table-average is-good">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                                </svg>
+                                <span>1 568</span>
+                            </div>
+                        </div>
+                        <div class="t-item">
+                            <div class="def-table-rate is-good">
+                                <div class="def-table-rate__curr">
+                                    <span>2 247</span>
+                                    <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.64645 0.646446C3.84171 0.451184 4.15829 0.451184 4.35355 0.646446L7.53553 3.82843C7.7308 4.02369 7.7308 4.34027 7.53553 4.53553C7.34027 4.7308 7.02369 4.7308 6.82843 4.53553L4 1.70711L1.17157 4.53553C0.976311 4.7308 0.659728 4.7308 0.464466 4.53553C0.269204 4.34027 0.269204 4.02369 0.464466 3.82843L3.64645 0.646446ZM3.5 11L3.5 1H4.5L4.5 11H3.5Z" stroke="none"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="def-table__changes is-good">+1</div>
+                        </div>
+                    </div>
+                    <div class="t-row">
+                        <div class="t-item">
+                            <div class="def-table-place">
+                                <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.3907 1.59901C12.5402 -0.427116 15.4597 -0.427118 16.6093 1.59901L18.7433 5.36038C19.1707 6.11357 19.9026 6.64536 20.751 6.81903L24.9877 7.6863C27.2699 8.15347 28.1721 10.9301 26.6004 12.6495L23.6825 15.8414C23.0983 16.4806 22.8187 17.341 22.9157 18.2015L23.4001 22.4989C23.661 24.8138 21.2991 26.5298 19.1782 25.5663L15.2408 23.7777C14.4524 23.4195 13.5476 23.4195 12.7592 23.7777L8.82184 25.5663C6.70092 26.5298 4.33899 24.8138 4.59992 22.4989L5.08432 18.2015C5.18131 17.341 4.90173 16.4806 4.31746 15.8414L1.39964 12.6495C-0.172091 10.9301 0.730083 8.15347 3.01227 7.6863L7.249 6.81903C8.09738 6.64536 8.82933 6.11357 9.25666 5.36038L11.3907 1.59901Z"/>
+                                </svg>
+                                <span>5</span>
+                            </div>
+                        </div>
+                        <div class="t-item def-table-company">
+                            <div class="def-table-company__avatar">
+                                <img src="./img/pics/company-logo.png" alt="">
+                            </div>
+                            <a href="#" class="def-table-company__link">Компания FastFine</a>
+                        </div>
+                        <div class="t-item">
+                            <div class="def-table-reviews">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.92107 0C3.1048 0 1.8602e-05 2.79426 1.8602e-05 6.22895C1.8602e-05 7.42952 0.379754 8.59249 1.1 9.59812C0.96366 11.1062 0.598228 12.2258 0.0676142 12.7562C-0.00251911 12.8263 -0.0200524 12.9336 0.0242423 13.0222C0.0634616 13.1013 0.144207 13.15 0.23072 13.15C0.241333 13.15 0.251945 13.1493 0.262788 13.1477C0.356222 13.1345 2.52666 12.8222 4.09659 11.916C4.98802 12.2756 5.93759 12.4579 6.92107 12.4579C10.7373 12.4579 13.8421 9.66364 13.8421 6.22895C13.8421 2.79426 10.7373 0 6.92107 0ZM3.69125 7.15175C3.18232 7.15175 2.76844 6.73788 2.76844 6.22895C2.76844 5.72002 3.18232 5.30614 3.69125 5.30614C4.20017 5.30614 4.61405 5.72002 4.61405 6.22895C4.61405 6.73788 4.20017 7.15175 3.69125 7.15175ZM6.92107 7.15175C6.41214 7.15175 5.99826 6.73788 5.99826 6.22895C5.99826 5.72002 6.41214 5.30614 6.92107 5.30614C7.43 5.30614 7.84388 5.72002 7.84388 6.22895C7.84388 6.73788 7.43 7.15175 6.92107 7.15175ZM10.1509 7.15175C9.64196 7.15175 9.22809 6.73788 9.22809 6.22895C9.22809 5.72002 9.64196 5.30614 10.1509 5.30614C10.6598 5.30614 11.0737 5.72002 11.0737 6.22895C11.0737 6.73788 10.6598 7.15175 10.1509 7.15175Z" stroke="none"/>
+                                </svg>
+                                <span>1 568</span>
+                            </div>
+                        </div>
+                        <div class="t-item">
+                            <div class="def-table-average is-good">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                                </svg>
+                                <span>1 568</span>
+                            </div>
+                        </div>
+                        <div class="t-item">
+                            <div class="def-table-rate is-good">
+                                <div class="def-table-rate__curr">
+                                    <span>2 247</span>
+                                    <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.64645 0.646446C3.84171 0.451184 4.15829 0.451184 4.35355 0.646446L7.53553 3.82843C7.7308 4.02369 7.7308 4.34027 7.53553 4.53553C7.34027 4.7308 7.02369 4.7308 6.82843 4.53553L4 1.70711L1.17157 4.53553C0.976311 4.7308 0.659728 4.7308 0.464466 4.53553C0.269204 4.34027 0.269204 4.02369 0.464466 3.82843L3.64645 0.646446ZM3.5 11L3.5 1H4.5L4.5 11H3.5Z" stroke="none"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="def-table__changes is-good">+1</div>
+                        </div>
+                    </div>
+                    <div class="t-row">
+                        <div class="t-item">
+                            <div class="def-table-place">
+                                <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.3907 1.59901C12.5402 -0.427116 15.4597 -0.427118 16.6093 1.59901L18.7433 5.36038C19.1707 6.11357 19.9026 6.64536 20.751 6.81903L24.9877 7.6863C27.2699 8.15347 28.1721 10.9301 26.6004 12.6495L23.6825 15.8414C23.0983 16.4806 22.8187 17.341 22.9157 18.2015L23.4001 22.4989C23.661 24.8138 21.2991 26.5298 19.1782 25.5663L15.2408 23.7777C14.4524 23.4195 13.5476 23.4195 12.7592 23.7777L8.82184 25.5663C6.70092 26.5298 4.33899 24.8138 4.59992 22.4989L5.08432 18.2015C5.18131 17.341 4.90173 16.4806 4.31746 15.8414L1.39964 12.6495C-0.172091 10.9301 0.730083 8.15347 3.01227 7.6863L7.249 6.81903C8.09738 6.64536 8.82933 6.11357 9.25666 5.36038L11.3907 1.59901Z"/>
+                                </svg>
+                                <span>6</span>
+                            </div>
+                        </div>
+                        <div class="t-item def-table-company">
+                            <div class="def-table-company__avatar">
+                                <img src="./img/pics/company-logo.png" alt="">
+                            </div>
+                            <a href="#" class="def-table-company__link">Компания FastFine</a>
+                        </div>
+                        <div class="t-item">
+                            <div class="def-table-reviews">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.92107 0C3.1048 0 1.8602e-05 2.79426 1.8602e-05 6.22895C1.8602e-05 7.42952 0.379754 8.59249 1.1 9.59812C0.96366 11.1062 0.598228 12.2258 0.0676142 12.7562C-0.00251911 12.8263 -0.0200524 12.9336 0.0242423 13.0222C0.0634616 13.1013 0.144207 13.15 0.23072 13.15C0.241333 13.15 0.251945 13.1493 0.262788 13.1477C0.356222 13.1345 2.52666 12.8222 4.09659 11.916C4.98802 12.2756 5.93759 12.4579 6.92107 12.4579C10.7373 12.4579 13.8421 9.66364 13.8421 6.22895C13.8421 2.79426 10.7373 0 6.92107 0ZM3.69125 7.15175C3.18232 7.15175 2.76844 6.73788 2.76844 6.22895C2.76844 5.72002 3.18232 5.30614 3.69125 5.30614C4.20017 5.30614 4.61405 5.72002 4.61405 6.22895C4.61405 6.73788 4.20017 7.15175 3.69125 7.15175ZM6.92107 7.15175C6.41214 7.15175 5.99826 6.73788 5.99826 6.22895C5.99826 5.72002 6.41214 5.30614 6.92107 5.30614C7.43 5.30614 7.84388 5.72002 7.84388 6.22895C7.84388 6.73788 7.43 7.15175 6.92107 7.15175ZM10.1509 7.15175C9.64196 7.15175 9.22809 6.73788 9.22809 6.22895C9.22809 5.72002 9.64196 5.30614 10.1509 5.30614C10.6598 5.30614 11.0737 5.72002 11.0737 6.22895C11.0737 6.73788 10.6598 7.15175 10.1509 7.15175Z" stroke="none"/>
+                                </svg>
+                                <span>1 568</span>
+                            </div>
+                        </div>
+                        <div class="t-item">
+                            <div class="def-table-average is-good">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                                </svg>
+                                <span>1 568</span>
+                            </div>
+                        </div>
+                        <div class="t-item">
+                            <div class="def-table-rate is-good">
+                                <div class="def-table-rate__curr">
+                                    <span>2 247</span>
+                                    <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.64645 0.646446C3.84171 0.451184 4.15829 0.451184 4.35355 0.646446L7.53553 3.82843C7.7308 4.02369 7.7308 4.34027 7.53553 4.53553C7.34027 4.7308 7.02369 4.7308 6.82843 4.53553L4 1.70711L1.17157 4.53553C0.976311 4.7308 0.659728 4.7308 0.464466 4.53553C0.269204 4.34027 0.269204 4.02369 0.464466 3.82843L3.64645 0.646446ZM3.5 11L3.5 1H4.5L4.5 11H3.5Z" stroke="none"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="def-table__changes is-good">+1</div>
+                        </div>
+                    </div>
+                    <div class="t-row">
+                        <div class="t-item">
+                            <div class="def-table-place">
+                                <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.3907 1.59901C12.5402 -0.427116 15.4597 -0.427118 16.6093 1.59901L18.7433 5.36038C19.1707 6.11357 19.9026 6.64536 20.751 6.81903L24.9877 7.6863C27.2699 8.15347 28.1721 10.9301 26.6004 12.6495L23.6825 15.8414C23.0983 16.4806 22.8187 17.341 22.9157 18.2015L23.4001 22.4989C23.661 24.8138 21.2991 26.5298 19.1782 25.5663L15.2408 23.7777C14.4524 23.4195 13.5476 23.4195 12.7592 23.7777L8.82184 25.5663C6.70092 26.5298 4.33899 24.8138 4.59992 22.4989L5.08432 18.2015C5.18131 17.341 4.90173 16.4806 4.31746 15.8414L1.39964 12.6495C-0.172091 10.9301 0.730083 8.15347 3.01227 7.6863L7.249 6.81903C8.09738 6.64536 8.82933 6.11357 9.25666 5.36038L11.3907 1.59901Z"/>
+                                </svg>
+                                <span>7</span>
+                            </div>
+                        </div>
+                        <div class="t-item def-table-company">
+                            <div class="def-table-company__avatar">
+                                <img src="./img/pics/company-logo.png" alt="">
+                            </div>
+                            <a href="#" class="def-table-company__link">Компания FastFine</a>
+                        </div>
+                        <div class="t-item">
+                            <div class="def-table-reviews">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.92107 0C3.1048 0 1.8602e-05 2.79426 1.8602e-05 6.22895C1.8602e-05 7.42952 0.379754 8.59249 1.1 9.59812C0.96366 11.1062 0.598228 12.2258 0.0676142 12.7562C-0.00251911 12.8263 -0.0200524 12.9336 0.0242423 13.0222C0.0634616 13.1013 0.144207 13.15 0.23072 13.15C0.241333 13.15 0.251945 13.1493 0.262788 13.1477C0.356222 13.1345 2.52666 12.8222 4.09659 11.916C4.98802 12.2756 5.93759 12.4579 6.92107 12.4579C10.7373 12.4579 13.8421 9.66364 13.8421 6.22895C13.8421 2.79426 10.7373 0 6.92107 0ZM3.69125 7.15175C3.18232 7.15175 2.76844 6.73788 2.76844 6.22895C2.76844 5.72002 3.18232 5.30614 3.69125 5.30614C4.20017 5.30614 4.61405 5.72002 4.61405 6.22895C4.61405 6.73788 4.20017 7.15175 3.69125 7.15175ZM6.92107 7.15175C6.41214 7.15175 5.99826 6.73788 5.99826 6.22895C5.99826 5.72002 6.41214 5.30614 6.92107 5.30614C7.43 5.30614 7.84388 5.72002 7.84388 6.22895C7.84388 6.73788 7.43 7.15175 6.92107 7.15175ZM10.1509 7.15175C9.64196 7.15175 9.22809 6.73788 9.22809 6.22895C9.22809 5.72002 9.64196 5.30614 10.1509 5.30614C10.6598 5.30614 11.0737 5.72002 11.0737 6.22895C11.0737 6.73788 10.6598 7.15175 10.1509 7.15175Z" stroke="none"/>
+                                </svg>
+                                <span>1 568</span>
+                            </div>
+                        </div>
+                        <div class="t-item">
+                            <div class="def-table-average is-good">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                                </svg>
+                                <span>1 568</span>
+                            </div>
+                        </div>
+                        <div class="t-item">
+                            <div class="def-table-rate is-good">
+                                <div class="def-table-rate__curr">
+                                    <span>2 247</span>
+                                    <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.64645 0.646446C3.84171 0.451184 4.15829 0.451184 4.35355 0.646446L7.53553 3.82843C7.7308 4.02369 7.7308 4.34027 7.53553 4.53553C7.34027 4.7308 7.02369 4.7308 6.82843 4.53553L4 1.70711L1.17157 4.53553C0.976311 4.7308 0.659728 4.7308 0.464466 4.53553C0.269204 4.34027 0.269204 4.02369 0.464466 3.82843L3.64645 0.646446ZM3.5 11L3.5 1H4.5L4.5 11H3.5Z" stroke="none"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="def-table__changes is-good">+1</div>
+                        </div>
+                    </div>
+                    <div class="t-row">
+                        <div class="t-item">
+                            <div class="def-table-place">
+                                <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.3907 1.59901C12.5402 -0.427116 15.4597 -0.427118 16.6093 1.59901L18.7433 5.36038C19.1707 6.11357 19.9026 6.64536 20.751 6.81903L24.9877 7.6863C27.2699 8.15347 28.1721 10.9301 26.6004 12.6495L23.6825 15.8414C23.0983 16.4806 22.8187 17.341 22.9157 18.2015L23.4001 22.4989C23.661 24.8138 21.2991 26.5298 19.1782 25.5663L15.2408 23.7777C14.4524 23.4195 13.5476 23.4195 12.7592 23.7777L8.82184 25.5663C6.70092 26.5298 4.33899 24.8138 4.59992 22.4989L5.08432 18.2015C5.18131 17.341 4.90173 16.4806 4.31746 15.8414L1.39964 12.6495C-0.172091 10.9301 0.730083 8.15347 3.01227 7.6863L7.249 6.81903C8.09738 6.64536 8.82933 6.11357 9.25666 5.36038L11.3907 1.59901Z"/>
+                                </svg>
+                                <span>8</span>
+                            </div>
+                        </div>
+                        <div class="t-item def-table-company">
+                            <div class="def-table-company__avatar">
+                                <img src="./img/pics/company-logo.png" alt="">
+                            </div>
+                            <a href="#" class="def-table-company__link">Компания FastFine</a>
+                        </div>
+                        <div class="t-item">
+                            <div class="def-table-reviews">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.92107 0C3.1048 0 1.8602e-05 2.79426 1.8602e-05 6.22895C1.8602e-05 7.42952 0.379754 8.59249 1.1 9.59812C0.96366 11.1062 0.598228 12.2258 0.0676142 12.7562C-0.00251911 12.8263 -0.0200524 12.9336 0.0242423 13.0222C0.0634616 13.1013 0.144207 13.15 0.23072 13.15C0.241333 13.15 0.251945 13.1493 0.262788 13.1477C0.356222 13.1345 2.52666 12.8222 4.09659 11.916C4.98802 12.2756 5.93759 12.4579 6.92107 12.4579C10.7373 12.4579 13.8421 9.66364 13.8421 6.22895C13.8421 2.79426 10.7373 0 6.92107 0ZM3.69125 7.15175C3.18232 7.15175 2.76844 6.73788 2.76844 6.22895C2.76844 5.72002 3.18232 5.30614 3.69125 5.30614C4.20017 5.30614 4.61405 5.72002 4.61405 6.22895C4.61405 6.73788 4.20017 7.15175 3.69125 7.15175ZM6.92107 7.15175C6.41214 7.15175 5.99826 6.73788 5.99826 6.22895C5.99826 5.72002 6.41214 5.30614 6.92107 5.30614C7.43 5.30614 7.84388 5.72002 7.84388 6.22895C7.84388 6.73788 7.43 7.15175 6.92107 7.15175ZM10.1509 7.15175C9.64196 7.15175 9.22809 6.73788 9.22809 6.22895C9.22809 5.72002 9.64196 5.30614 10.1509 5.30614C10.6598 5.30614 11.0737 5.72002 11.0737 6.22895C11.0737 6.73788 10.6598 7.15175 10.1509 7.15175Z" stroke="none"/>
+                                </svg>
+                                <span>1 568</span>
+                            </div>
+                        </div>
+                        <div class="t-item">
+                            <div class="def-table-average is-good">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                                </svg>
+                                <span>1 568</span>
+                            </div>
+                        </div>
+                        <div class="t-item">
+                            <div class="def-table-rate is-good">
+                                <div class="def-table-rate__curr">
+                                    <span>2 247</span>
+                                    <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.64645 0.646446C3.84171 0.451184 4.15829 0.451184 4.35355 0.646446L7.53553 3.82843C7.7308 4.02369 7.7308 4.34027 7.53553 4.53553C7.34027 4.7308 7.02369 4.7308 6.82843 4.53553L4 1.70711L1.17157 4.53553C0.976311 4.7308 0.659728 4.7308 0.464466 4.53553C0.269204 4.34027 0.269204 4.02369 0.464466 3.82843L3.64645 0.646446ZM3.5 11L3.5 1H4.5L4.5 11H3.5Z" stroke="none"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="def-table__changes is-good">+1</div>
+                        </div>
+                    </div>
+                    <div class="t-row">
+                        <div class="t-item">
+                            <div class="def-table-place">
+                                <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.3907 1.59901C12.5402 -0.427116 15.4597 -0.427118 16.6093 1.59901L18.7433 5.36038C19.1707 6.11357 19.9026 6.64536 20.751 6.81903L24.9877 7.6863C27.2699 8.15347 28.1721 10.9301 26.6004 12.6495L23.6825 15.8414C23.0983 16.4806 22.8187 17.341 22.9157 18.2015L23.4001 22.4989C23.661 24.8138 21.2991 26.5298 19.1782 25.5663L15.2408 23.7777C14.4524 23.4195 13.5476 23.4195 12.7592 23.7777L8.82184 25.5663C6.70092 26.5298 4.33899 24.8138 4.59992 22.4989L5.08432 18.2015C5.18131 17.341 4.90173 16.4806 4.31746 15.8414L1.39964 12.6495C-0.172091 10.9301 0.730083 8.15347 3.01227 7.6863L7.249 6.81903C8.09738 6.64536 8.82933 6.11357 9.25666 5.36038L11.3907 1.59901Z"/>
+                                </svg>
+                                <span>9</span>
+                            </div>
+                        </div>
+                        <div class="t-item def-table-company">
+                            <div class="def-table-company__avatar">
+                                <img src="./img/pics/company-logo.png" alt="">
+                            </div>
+                            <a href="#" class="def-table-company__link">Компания FastFine</a>
+                        </div>
+                        <div class="t-item">
+                            <div class="def-table-reviews">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.92107 0C3.1048 0 1.8602e-05 2.79426 1.8602e-05 6.22895C1.8602e-05 7.42952 0.379754 8.59249 1.1 9.59812C0.96366 11.1062 0.598228 12.2258 0.0676142 12.7562C-0.00251911 12.8263 -0.0200524 12.9336 0.0242423 13.0222C0.0634616 13.1013 0.144207 13.15 0.23072 13.15C0.241333 13.15 0.251945 13.1493 0.262788 13.1477C0.356222 13.1345 2.52666 12.8222 4.09659 11.916C4.98802 12.2756 5.93759 12.4579 6.92107 12.4579C10.7373 12.4579 13.8421 9.66364 13.8421 6.22895C13.8421 2.79426 10.7373 0 6.92107 0ZM3.69125 7.15175C3.18232 7.15175 2.76844 6.73788 2.76844 6.22895C2.76844 5.72002 3.18232 5.30614 3.69125 5.30614C4.20017 5.30614 4.61405 5.72002 4.61405 6.22895C4.61405 6.73788 4.20017 7.15175 3.69125 7.15175ZM6.92107 7.15175C6.41214 7.15175 5.99826 6.73788 5.99826 6.22895C5.99826 5.72002 6.41214 5.30614 6.92107 5.30614C7.43 5.30614 7.84388 5.72002 7.84388 6.22895C7.84388 6.73788 7.43 7.15175 6.92107 7.15175ZM10.1509 7.15175C9.64196 7.15175 9.22809 6.73788 9.22809 6.22895C9.22809 5.72002 9.64196 5.30614 10.1509 5.30614C10.6598 5.30614 11.0737 5.72002 11.0737 6.22895C11.0737 6.73788 10.6598 7.15175 10.1509 7.15175Z" stroke="none"/>
+                                </svg>
+                                <span>1 568</span>
+                            </div>
+                        </div>
+                        <div class="t-item">
+                            <div class="def-table-average is-good">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                                </svg>
+                                <span>1 568</span>
+                            </div>
+                        </div>
+                        <div class="t-item">
+                            <div class="def-table-rate is-good">
+                                <div class="def-table-rate__curr">
+                                    <span>2 247</span>
+                                    <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.64645 0.646446C3.84171 0.451184 4.15829 0.451184 4.35355 0.646446L7.53553 3.82843C7.7308 4.02369 7.7308 4.34027 7.53553 4.53553C7.34027 4.7308 7.02369 4.7308 6.82843 4.53553L4 1.70711L1.17157 4.53553C0.976311 4.7308 0.659728 4.7308 0.464466 4.53553C0.269204 4.34027 0.269204 4.02369 0.464466 3.82843L3.64645 0.646446ZM3.5 11L3.5 1H4.5L4.5 11H3.5Z" stroke="none"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="def-table__changes is-good">+1</div>
+                        </div>
+                    </div>
+                    <div class="t-row">
+                        <div class="t-item">
+                            <div class="def-table-place">
+                                <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.3907 1.59901C12.5402 -0.427116 15.4597 -0.427118 16.6093 1.59901L18.7433 5.36038C19.1707 6.11357 19.9026 6.64536 20.751 6.81903L24.9877 7.6863C27.2699 8.15347 28.1721 10.9301 26.6004 12.6495L23.6825 15.8414C23.0983 16.4806 22.8187 17.341 22.9157 18.2015L23.4001 22.4989C23.661 24.8138 21.2991 26.5298 19.1782 25.5663L15.2408 23.7777C14.4524 23.4195 13.5476 23.4195 12.7592 23.7777L8.82184 25.5663C6.70092 26.5298 4.33899 24.8138 4.59992 22.4989L5.08432 18.2015C5.18131 17.341 4.90173 16.4806 4.31746 15.8414L1.39964 12.6495C-0.172091 10.9301 0.730083 8.15347 3.01227 7.6863L7.249 6.81903C8.09738 6.64536 8.82933 6.11357 9.25666 5.36038L11.3907 1.59901Z"/>
+                                </svg>
+                                <span>10</span>
+                            </div>
+                        </div>
+                        <div class="t-item def-table-company">
+                            <div class="def-table-company__avatar">
+                                <img src="./img/pics/company-logo.png" alt="">
+                            </div>
+                            <a href="#" class="def-table-company__link">Компания FastFine</a>
+                        </div>
+                        <div class="t-item">
+                            <div class="def-table-reviews">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.92107 0C3.1048 0 1.8602e-05 2.79426 1.8602e-05 6.22895C1.8602e-05 7.42952 0.379754 8.59249 1.1 9.59812C0.96366 11.1062 0.598228 12.2258 0.0676142 12.7562C-0.00251911 12.8263 -0.0200524 12.9336 0.0242423 13.0222C0.0634616 13.1013 0.144207 13.15 0.23072 13.15C0.241333 13.15 0.251945 13.1493 0.262788 13.1477C0.356222 13.1345 2.52666 12.8222 4.09659 11.916C4.98802 12.2756 5.93759 12.4579 6.92107 12.4579C10.7373 12.4579 13.8421 9.66364 13.8421 6.22895C13.8421 2.79426 10.7373 0 6.92107 0ZM3.69125 7.15175C3.18232 7.15175 2.76844 6.73788 2.76844 6.22895C2.76844 5.72002 3.18232 5.30614 3.69125 5.30614C4.20017 5.30614 4.61405 5.72002 4.61405 6.22895C4.61405 6.73788 4.20017 7.15175 3.69125 7.15175ZM6.92107 7.15175C6.41214 7.15175 5.99826 6.73788 5.99826 6.22895C5.99826 5.72002 6.41214 5.30614 6.92107 5.30614C7.43 5.30614 7.84388 5.72002 7.84388 6.22895C7.84388 6.73788 7.43 7.15175 6.92107 7.15175ZM10.1509 7.15175C9.64196 7.15175 9.22809 6.73788 9.22809 6.22895C9.22809 5.72002 9.64196 5.30614 10.1509 5.30614C10.6598 5.30614 11.0737 5.72002 11.0737 6.22895C11.0737 6.73788 10.6598 7.15175 10.1509 7.15175Z" stroke="none"/>
+                                </svg>
+                                <span>1 568</span>
+                            </div>
+                        </div>
+                        <div class="t-item">
+                            <div class="def-table-average is-good">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                                </svg>
+                                <span>1 568</span>
+                            </div>
+                        </div>
+                        <div class="t-item">
+                            <div class="def-table-rate is-good">
+                                <div class="def-table-rate__curr">
+                                    <span>2 247</span>
+                                    <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.64645 0.646446C3.84171 0.451184 4.15829 0.451184 4.35355 0.646446L7.53553 3.82843C7.7308 4.02369 7.7308 4.34027 7.53553 4.53553C7.34027 4.7308 7.02369 4.7308 6.82843 4.53553L4 1.70711L1.17157 4.53553C0.976311 4.7308 0.659728 4.7308 0.464466 4.53553C0.269204 4.34027 0.269204 4.02369 0.464466 3.82843L3.64645 0.646446ZM3.5 11L3.5 1H4.5L4.5 11H3.5Z" stroke="none"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="def-table__changes is-good">+1</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="def-btn def-btn--orange is-mobile main-top__more">Больше компаний</a>
+    </div>
+</section>
+
+            <!-- pricing module -->
+            <section class="pricing">
+    <div class="pricing-wrapper limiter">
+        <div class="pricing-text">
+            <h2 class="pricing-text__title">Узнайте цену своей работы и сравните условия сразу в 3 лучших компаниях</h2>
+            <div class="pricing-text__subtitle">Информация будет отправлена компаниям, через некоторое время Вам сообщат условия написания работы</div>
+        </div>
+        <form class="pricing-form">
+            <div class="select-block pricing-form__item pricing-form__item--halfed">
+                <select>
+                    <option value data-choices-placeholder>Тип работы</option>
+                    <option>Пример 1</option>
+                    <option>Пример 2</option>
+                    <option>Пример 3</option>
+                </select>
+            </div>
+            <div class="input-block has-error pricing-form__item pricing-form__item--halfed">
+                <input type="text" class="input-block__inner" placeholder="Тема работы">
+                <div class="input-block__error">Неверное значение!</div>
+            </div>
+            <div class="input-block pricing-form__item pricing-form__item--halfed">
+                <input type="text" class="input-block__inner" placeholder="Ваше имя">
+            </div>
+            <div class="input-block pricing-form__item pricing-form__item--halfed">
+                <input type="text" class="input-block__inner" placeholder="Ваш email">
+            </div>
+            <div class="input-block pricing-form__item">
+                <input type="text" class="input-block__inner" placeholder="Телефон">
+            </div>
+            <button type="submit" class="def-btn def-btn--orange pricing-form__submit">Узнать стоимость</button>
+        </form>
+    </div>
+</section>
+
+            <!-- descr module -->
+            <div class="descr">
+    <div class="descr-wrapper limiter">
+        <div class="descr-item">
+            <div class="descr-item__heading">
+                <div class="descr-item__heading-icon">
+                    <img src="./img/default/descr/descr1.svg" alt="icon">
+                </div>
+                <h3 class="descr-item__heading-title">
+                    Где заказать диплом или курсовую?
+                </h3>
+            </div>
+            <div class="descr-item__text">
+                <p>
+                    Это первый вопрос, который возникает при принятии такого решения.
+                </p>
+                <p>
+                    Наш портал поможет определиться с выбором исполнителя Вашей курсовой или дипломной работы. Для этого мы систематизировали всю информацию о рефератных компаниях, которая постоянно проверяется и уточняется.
+                </p>
+                <p>
+                    Вы можете узнать, есть ли у компании: официальная регистрация, договор, юридические гарантии, офис и в каком городе, бесплатная горячая линия, личный кабинет, общение с автором, бесплатные доработки и в течение какого времени, какие преимущества есть
+                    у компании, а какие недостатки.
+                </p>
+            </div>
+        </div>
+        <div class="descr-item">
+            <div class="descr-item__heading">
+                <div class="descr-item__heading-icon">
+                    <img src="./img/default/descr/descr2.svg" alt="icon">
+                </div>
+                <h3 class="descr-item__heading-title">Рейтинги рефератных <br> компаний</h3>
+            </div>
+            <div class="descr-item__text">
+                <p>
+                    Также нами разработана многофакторная система независимых рейтингов, которая отражает популярность компаний, степень доверия к ним пользователей. Мы проводим большую работу с отзывами, которые оставляют пользователи на различных отзывных сайтах, в том
+                    числе и на нашем.
+                </p>
+                <p>
+                    Во-первых, мы собираем все эти отзывы и размещаем на своём портале, чтобы Вам не приходилось тратить время на сбор информации.
+                </p>
+                <p>
+                    Во-вторых, разработанный нами алгоритм выявляет ложные и достоверные отзывы, отзывы конкурентов и недоброжелателей.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- choose module -->
+            <div class="choose">
+    <div class="choose-wrapper limiter">
+        <div class="choose-item">
+            <div class="choose-item-info">
+                <div class="choose-item-info__icon">
+                    <img src="./img/icons/icon-book.svg" alt="icon-book">
+                </div>
+                <h3 class="choose-item-info__title">Выбрать компанию по видам работ</h3>
+                <div class="choose-item-info__descr">Предлагаем выбрать компанию по рейтингам видов работ</div>
+            </div>
+            <div class="choose-item-list">
+                <a href="#" class="def-btn def-btn--white choose-item-list__label">Диплом</a>
+                <a href="#" class="def-btn def-btn--white choose-item-list__label">Курсовая</a>
+                <a href="#" class="def-btn def-btn--white choose-item-list__label">Отчёт по практике</a>
+                <a href="#" class="def-btn def-btn--white choose-item-list__label">Реферат</a>
+                <a href="#" class="def-btn def-btn--white choose-item-list__label">Диссертация</a>
+                <a href="#" class="def-btn def-btn--white choose-item-list__label">Контрольные и задачи</a>
+                <a href="#" class="def-btn def-btn--white choose-item-list__label">Диплом MBA</a>
+                <a href="#" class="def-btn def-btn--white choose-item-list__label">Презентация</a>
+                <a href="#" class="def-btn def-btn--white choose-item-list__label">Эссе</a>
+                <a href="#" class="def-btn def-btn--white choose-item-list__label">Доклад</a>
+            </div>
+        </div>
+        <div class="choose-item">
+            <div class="choose-item-info">
+                <div class="choose-item-info__icon">
+                    <img src="./img/icons/icon-mark.svg" alt="icon-mark">
+                </div>
+                <h3 class="choose-item-info__title">Выбрать компанию по городам</h3>
+                <div class="choose-item-info__descr">Предлагаем выбрать компанию по вашему <br> городу</div>
+            </div>
+            <div class="choose-item-list">
+                <a href="#" class="def-btn def-btn--white choose-item-list__label">Москва</a>
+                <a href="#" class="def-btn def-btn--white choose-item-list__label">Санкт-Петербург</a>
+                <a href="#" class="def-btn def-btn--white choose-item-list__label">Уфа</a>
+                <a href="#" class="def-btn def-btn--white choose-item-list__label">Волгоград</a>
+                <a href="#" class="def-btn def-btn--white choose-item-list__label">Самара</a>
+                <a href="#" class="def-btn def-btn--white choose-item-list__label">Тюмень</a>
+                <a href="#" class="def-btn def-btn--white choose-item-list__label">Нижний Новгород</a>
+                <a href="#" class="def-btn def-btn--white choose-item-list__label">Киев</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- latest-reviews module -->
+            <div class="latest-reviews">
+    <div class="latest-reviews-wrapper limiter">
+        <h2 class="def-title latest-reviews__title">Последние отзывы</h2>
+        <div class="latest-reviews-col">
+            <!-- review -->
+            <div class="review">
+    <div class="review__avatar">Ж</div>
+    <div class="review__author">Жанна Кириченко</div>
+    <div class="review__info">
+        <span>22 часа назад</span>
+        <span>О компании ДипломТайм (DiplomTime)</span>
+    </div>
+    <div class="review-rate">
+        <div class="review-rate-stars">
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+        </div>
+        <div class="review-rate__number">4.8 из 5</div>
+    </div>
+    <div class="review__text">Всем добрый вечер. Решился написать не большой отзыв о данной порядочной компании и её специалистах. В компанию Диплом Ворк я обратился по поводу написания дипломной работы. Обратится сюда мне рекомендовали ребята по группе, отзывались, как о приличной
+        и добросовестной компании. </div>
+</div>
+            <!-- review -->
+            <div class="review">
+    <div class="review__avatar">Ж</div>
+    <div class="review__author">Жанна Кириченко</div>
+    <div class="review__info">
+        <span>22 часа назад</span>
+        <span>О компании ДипломТайм (DiplomTime)</span>
+    </div>
+    <div class="review-rate">
+        <div class="review-rate-stars">
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+        </div>
+        <div class="review-rate__number">4.8 из 5</div>
+    </div>
+    <div class="review__text">Всем добрый вечер. Решился написать не большой отзыв о данной порядочной компании и её специалистах. В компанию Диплом Ворк я обратился по поводу написания дипломной работы. Обратится сюда мне рекомендовали ребята по группе, отзывались, как о приличной
+        и добросовестной компании. </div>
+</div>
+            <!-- review -->
+            <div class="review">
+    <div class="review__avatar">Ж</div>
+    <div class="review__author">Жанна Кириченко</div>
+    <div class="review__info">
+        <span>22 часа назад</span>
+        <span>О компании ДипломТайм (DiplomTime)</span>
+    </div>
+    <div class="review-rate">
+        <div class="review-rate-stars">
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+        </div>
+        <div class="review-rate__number">4.8 из 5</div>
+    </div>
+    <div class="review__text">Всем добрый вечер. Решился написать не большой отзыв о данной порядочной компании и её специалистах. В компанию Диплом Ворк я обратился по поводу написания дипломной работы. Обратится сюда мне рекомендовали ребята по группе, отзывались, как о приличной
+        и добросовестной компании. </div>
+</div>
+        </div>
+        <div class="latest-reviews-col">
+            <!-- review -->
+            <div class="review">
+    <div class="review__avatar">Ж</div>
+    <div class="review__author">Жанна Кириченко</div>
+    <div class="review__info">
+        <span>22 часа назад</span>
+        <span>О компании ДипломТайм (DiplomTime)</span>
+    </div>
+    <div class="review-rate">
+        <div class="review-rate-stars">
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+        </div>
+        <div class="review-rate__number">4.8 из 5</div>
+    </div>
+    <div class="review__text">Всем добрый вечер. Решился написать не большой отзыв о данной порядочной компании и её специалистах. В компанию Диплом Ворк я обратился по поводу написания дипломной работы. Обратится сюда мне рекомендовали ребята по группе, отзывались, как о приличной
+        и добросовестной компании. </div>
+</div>
+            <!-- review -->
+            <div class="review">
+    <div class="review__avatar">Ж</div>
+    <div class="review__author">Жанна Кириченко</div>
+    <div class="review__info">
+        <span>22 часа назад</span>
+        <span>О компании ДипломТайм (DiplomTime)</span>
+    </div>
+    <div class="review-rate">
+        <div class="review-rate-stars">
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item is-filled">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+            <div class="review-rate-stars__item">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L11.7085 5.27205L17.5595 6.21885L13.3825 10.424L14.2901 16.2812L9 13.608L3.70993 16.2812L4.61753 10.424L0.440492 6.21885L6.29149 5.27205L9 0Z" stroke="none"/>
+                </svg>
+            </div>
+        </div>
+        <div class="review-rate__number">4.8 из 5</div>
+    </div>
+    <div class="review__text">Всем добрый вечер. Решился написать не большой отзыв о данной порядочной компании и её специалистах. В компанию Диплом Ворк я обратился по поводу написания дипломной работы. Обратится сюда мне рекомендовали ребята по группе, отзывались, как о приличной
+        и добросовестной компании. </div>
+</div>
+        </div>
+        <a href="#" class="def-btn def-btn--orange latest-reviews__all">Читать больше отзывов</a>
+    </div>
+</div>
+
+        </main>
+
+        <!-- footer -->
+        <footer class="footer">
+    <div class="footer-wrapper limiter">
+        <div class="footer-about">
+            <a href="#" class="footer-about__logo">
+                <img src="./img/default/logo.svg" alt="TopAvtor">
+            </a>
+            <div class="footer-about__text">Самые честные рейтинг и отзывы в интернете о рефератных компаниях. Более 1200 компаний в нашей базе позволят выбрать лучшую.</div>
+        </div>
+        <nav class="footer-nav">
+            <ul class="footer-nav-list">
+                <li class="footer-nav__link"><a href="#">Главная</a></li>
+                <li class="footer-nav__link">
+                    <a href="#">Вход</a>
+                </li>
+                <li class="footer-nav__link">
+                    <a href="#">Рейтинг</a>
+                </li>
+                <li class="footer-nav__link">
+                    <a href="#">Регистрация</a>
+                </li>
+                <li class="footer-nav__link">
+                    <a href="#">Компании</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer-manage">
+            <div class="footer-manage-socials">
+                <a href="#" class="footer-manage-socials__link is-vk">
+                    <img src="./img/icons/icon-vk.svg" alt="icon-vk">
+                </a>
+                <a href="#" class="footer-manage-socials__link is-twitter">
+                    <img src="./img/icons/icon-twitter.svg" alt="icon-twitter">
+                </a>
+                <a href="#" class="footer-manage-socials__link is-fb">
+                    <img src="./img/icons/icon-fb.svg" alt="icon-fb">
+                </a>
+            </div>
+            <a href="#" class="def-btn def-btn--orange footer-manage__add-review">Добавить отзыв</a>
+            <div class="footer-manage__copyrights">© 2020 TopAvtor - Честные отзывы о рефератных компаниях</div>
+        </div>
+    </div>
+</footer>
+
+    </div>
+
+    <!-- modals module -->
+    <div class="overlay">
+    <div class="modal modal-thanks">
+        <div class="modal-thanks__title">Спасибо за отзыв!</div>
+        <div class="modal-thanks__text">Ваш отзыв о компании добавлен. После проверки модератором он будет добавлен на сайт</div>
+        <button class="modal-thanks__btn def-btn def-btn--orange" onclick="closeModal(document.querySelector('.modal-thanks'))">Закрыть</button>
+        <button class="modal-close"></button>
+    </div>
+    <div class="modal modal-auth modal-reg">
+        <div class="form modal-auth-form">
+            <div class="modal-auth__title">Регистрация</div>
+            <div class="input-block input-block-def  modal-auth__input">
+                <input type="text" class="input-block__inner" placeholder="Ваше имя">
+                <div class="input-block__error">Неверное значение!</div>
+            </div>
+            <div class="input-block input-block-def  modal-auth__input">
+                <input type="text" class="input-block__inner" placeholder="Email">
+                <div class="input-block__error">Неверное значение!</div>
+            </div>
+            <div class="input-block input-block-def  modal-auth__input">
+                <input type="password" class="input-block__inner" placeholder="Пароль">
+                <div class="input-block__error">Неверное значение!</div>
+            </div>
+            <div class="input-block input-block-def  modal-auth__input">
+                <input type="password" class="input-block__inner" placeholder="Повторите пароль">
+                <div class="input-block__error">Неверное значение!</div>
+            </div>
+            <button type="submit" class="def-btn def-btn--orange modal-auth__submit">Зарегистрироваться</button>
+        </div>
+        <div class="modal-close"></div>
+    </div>
+    <div class="modal modal-auth modal-login">
+        <div class="form modal-auth-form">
+            <div class="modal-auth__title">Вход в кабинет</div>
+            <div class="input-block input-block-def  modal-auth__input">
+                <input type="text" class="input-block__inner" placeholder="Email">
+                <div class="input-block__error">Неверное значение!</div>
+            </div>
+            <div class="input-block input-block-def  modal-auth__input">
+                <input type="password" class="input-block__inner" placeholder="Пароль">
+                <div class="input-block__error">Неверное значение!</div>
+            </div>
+            <button type="submit" class="def-btn def-btn--orange modal-auth__submit">Войти в личный кабинет</button>
+        </div>
+        <div class="modal-auth-btns">
+            <button class="modal-auth-btns__item" onclick="openModal(document.querySelector('.modal-restore'))">Забыли пароль?</button>
+            <button class="modal-auth-btns__item" onclick="openModal(document.querySelector('.modal-reg'))">Регистрация</button>
+        </div>
+        <div class="modal-close"></div>
+    </div>
+    <div class="modal modal-auth modal-restore">
+        <div class="form modal-auth-form">
+            <div class="modal-auth__title">Восстановить аккаунт</div>
+            <div class="input-block input-block-def  modal-auth__input">
+                <input type="text" class="input-block__inner" placeholder="Email">
+                <div class="input-block__error">Неверное значение!</div>
+            </div>
+            <button type="submit" class="def-btn def-btn--orange modal-auth__submit">Восстановить</button>
+        </div>
+        <div class="modal-auth-btns">
+            <button class="modal-auth-btns__item" onclick="openModal(document.querySelector('.modal-login'))">Вход</button>
+            <button class="modal-auth-btns__item" onclick="openModal(document.querySelector('.modal-reg'))">Регистрация</button>
+        </div>
+        <div class="modal-close"></div>
+    </div>
+    <div class="overlay-trigger"></div>
+</div>
+
+    <!-- connecting scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
+
+</body>
+
+</html>

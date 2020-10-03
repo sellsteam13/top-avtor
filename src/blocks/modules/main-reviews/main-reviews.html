@@ -1,0 +1,186 @@
+<section class="main-reviews">
+    <div class="main-reviews-wrapper limiter">
+        <div class="main-reviews-list">
+            <div class="main-reviews-type">
+                <div class="tabs">
+                    <a href="#" class="tabs__item is-active">Отзывы студентов</a>
+                    <a href="#" class="tabs__item">Отзывы автров</a>
+                </div>
+            </div>
+            <div class="main-reviews-heading">
+                <h2 class="main-reviews-heading__title">Отзывы от студентов</h2>
+                <div class="main-reviews-heading__sort right-aligned">
+                    <div class="tabs">
+                        <a href="#" class="tabs__item sort__btn sort__btn-text">Сортировать по:</a>
+                        <button class="tabs__item sort__btn is-active">
+                            <span>дате</span>
+                            <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.64645 4.35355C3.84171 4.54882 4.15829 4.54882 4.35355 4.35355L7.53553 1.17157C7.7308 0.976311 7.7308 0.659728 7.53553 0.464466C7.34027 0.269204 7.02369 0.269204 6.82843 0.464466L4 3.29289L1.17157 0.464466C0.976311 0.269204 0.659728 0.269204 0.464466 0.464466C0.269204 0.659728 0.269204 0.976311 0.464466 1.17157L3.64645 4.35355ZM3.5 3L3.5 4L4.5 4L4.5 3L3.5 3Z" stroke="none"/>
+                            </svg>
+                        </button>
+                        <button class="tabs__item sort__btn">
+                            <span>рейтингу</span>
+                            <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.64645 4.35355C3.84171 4.54882 4.15829 4.54882 4.35355 4.35355L7.53553 1.17157C7.7308 0.976311 7.7308 0.659728 7.53553 0.464466C7.34027 0.269204 7.02369 0.269204 6.82843 0.464466L4 3.29289L1.17157 0.464466C0.976311 0.269204 0.659728 0.269204 0.464466 0.464466C0.269204 0.659728 0.269204 0.976311 0.464466 1.17157L3.64645 4.35355ZM3.5 3L3.5 4L4.5 4L4.5 3L3.5 3Z" stroke="none"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="main-reviews-list-inner">
+                <!-- review -->
+                @@include("../review/review.html")
+                <!-- review -->
+                @@include("../review/review.html")
+                <!-- review -->
+                @@include("../review/review.html")
+                <!-- review -->
+                @@include("../review/review.html")
+                <!-- review -->
+                @@include("../review/review.html")
+                <!-- review -->
+                @@include("../review/review.html")
+                <!-- review -->
+                @@include("../review/review.html")
+                <!-- review -->
+                @@include("../review/review.html")
+            </div>
+            <form action="#" class="main-reviews-new">
+                <div class="main-reviews-new__title">Написать отзыв</div>
+                <div class="input-block input-block-def  main-reviews-new__item main-reviews-new__item--halfed">
+                    <input type="text" class="input-block__inner" placeholder="Ваше имя">
+                    <div class="input-block__error">Неверное значение!</div>
+                </div>
+                <div class="input-block input-block-def  main-reviews-new__item main-reviews-new__item--halfed">
+                    <input type="text" class="input-block__inner" placeholder="Email">
+                    <div class="input-block__error">Неверное значение!</div>
+                </div>
+                <div class="input-block input-block-def  main-reviews-new__item main-reviews-new__item">
+                    <textarea class="input-block__textarea" placeholder="Текст отзыва"></textarea>
+                    <div class="input-block__error">Неверное значение!</div>
+                </div>
+                <div class="main-reviews-new__subtitle">Оцените работу компании:</div>
+                <div class="main-reviews-new__block">
+                    <div class="main-reviews-new__block-title">Цена:</div>
+                    <div class="main-reviews-new__block-content tabs">
+                        <a href="#" class="tabs__item is-active">Низкая</a>
+                        <a href="#" class="tabs__item">Средняя</a>
+                        <a href="#" class="tabs__item">Высокая</a>
+                    </div>
+                </div>
+                <div class="main-reviews-new__block">
+                    <div class="main-reviews-new__block-title">Сроки работы:</div>
+                    <div class="main-reviews-new__block-content tabs">
+                        <a href="#" class="tabs__item">Вовремя</a>
+                        <a href="#" class="tabs__item is-active">Ранше срока</a>
+                        <a href="#" class="tabs__item">С задержкой</a>
+                    </div>
+                </div>
+                <div class="main-reviews-new__block main-reviews-new__block-numbers">
+                    <div class="main-reviews-new__block-title">Качество работы:</div>
+                    <div class="main-reviews-new__block-content tabs">
+                        <a href="#" class="tabs__item is-active">1</a>
+                        <a href="#" class="tabs__item">2</a>
+                        <a href="#" class="tabs__item">3</a>
+                        <a href="#" class="tabs__item">4</a>
+                        <a href="#" class="tabs__item">5</a>
+                    </div>
+                </div>
+                <div class="main-reviews-new__block main-reviews-new__block-numbers">
+                    <div class="main-reviews-new__block-title">Сервис</div>
+                    <div class="main-reviews-new__block-content tabs">
+                        <a href="#" class="tabs__item is-active">1</a>
+                        <a href="#" class="tabs__item">2</a>
+                        <a href="#" class="tabs__item">3</a>
+                        <a href="#" class="tabs__item">4</a>
+                        <a href="#" class="tabs__item">5</a>
+                    </div>
+                </div>
+                <div class="main-reviews-new__submit"><button type="submit" class="def-btn def-btn--orange">Оставить отзыв</button></div>
+            </form>
+        </div>
+        <aside class="main-reviews-aside">
+            <div class="main-reviews-aside__title">
+                <div class="main-reviews-aside__title-count">10</div>
+                <span>Топ 10 компаний</span>
+            </div>
+            <div class="main-reviews-aside-list">
+                <div class="main-reviews-aside__company is-first">
+                    <div class="main-reviews-aside__company-place">
+                        #1
+                    </div>
+                    <img src="./img/pics/logo.png" alt="example">
+                </div>
+                <div class="main-reviews-aside__company is-second">
+                    <div class="main-reviews-aside__company-place">
+                        #2
+                    </div>
+                    <img src="./img/pics/logo.png" alt="example">
+                </div>
+                <div class="main-reviews-aside__company is-third">
+                    <div class="main-reviews-aside__company-place">
+                        #3
+                    </div>
+                    <img src="./img/pics/logo.png" alt="example">
+                </div>
+                <div class="main-reviews-aside__company">
+                    <div class="main-reviews-aside__company-place">
+                        #4
+                    </div>
+                    <img src="./img/pics/logo.png" alt="example">
+                </div>
+                <div class="main-reviews-aside__company">
+                    <div class="main-reviews-aside__company-place">
+                        #5
+                    </div>
+                    <img src="./img/pics/logo.png" alt="example">
+                </div>
+                <div class="main-reviews-aside__company">
+                    <div class="main-reviews-aside__company-place">
+                        #6
+                    </div>
+                    <img src="./img/pics/logo.png" alt="example">
+                </div>
+                <div class="main-reviews-aside__company">
+                    <div class="main-reviews-aside__company-place">
+                        #7
+                    </div>
+                    <img src="./img/pics/logo.png" alt="example">
+                </div>
+                <div class="main-reviews-aside__company">
+                    <div class="main-reviews-aside__company-place">
+                        #8
+                    </div>
+                    <img src="./img/pics/logo.png" alt="example">
+                </div>
+                <div class="main-reviews-aside__company">
+                    <div class="main-reviews-aside__company-place">
+                        #9
+                    </div>
+                    <img src="./img/pics/logo.png" alt="example">
+                </div>
+                <div class="main-reviews-aside__company">
+                    <div class="main-reviews-aside__company-place">
+                        #10
+                    </div>
+                    <img src="./img/pics/logo.png" alt="example">
+                </div>
+            </div>
+            <div class="is-mobile main-reviews-aside-controls">
+                <button class="main-reviews-aside__prev main-reviews-aside__arrow">
+                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.17007 0L9.21908 1.04901L2.83983 7.4283H19V8.91185H2.83983L9.21908 15.2911L8.17007 16.3401L0 8.17008L8.17007 0Z" stroke="none"/>
+                    </svg>
+                </button>
+                <div class="main-reviews-aside-controls__curr">
+                    1
+                </div>
+                <button class="main-reviews-aside__next main-reviews-aside__arrow">
+                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.17007 0L9.21908 1.04901L2.83983 7.4283H19V8.91185H2.83983L9.21908 15.2911L8.17007 16.3401L0 8.17008L8.17007 0Z" stroke="none"/>
+                    </svg>
+                </button>
+            </div>
+        </aside>
+    </div>
+</section>

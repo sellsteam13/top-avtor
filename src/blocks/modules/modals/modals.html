@@ -1,0 +1,66 @@
+<div class="overlay">
+    <div class="modal modal-thanks">
+        <div class="modal-thanks__title">Спасибо за отзыв!</div>
+        <div class="modal-thanks__text">Ваш отзыв о компании добавлен. После проверки модератором он будет добавлен на сайт</div>
+        <button class="modal-thanks__btn def-btn def-btn--orange" onclick="closeModal(document.querySelector('.modal-thanks'))">Закрыть</button>
+        <button class="modal-close"></button>
+    </div>
+    <div class="modal modal-auth modal-reg">
+        <div class="form modal-auth-form">
+            <div class="modal-auth__title">Регистрация</div>
+            <div class="input-block input-block-def  modal-auth__input">
+                <input type="text" class="input-block__inner" placeholder="Ваше имя">
+                <div class="input-block__error">Неверное значение!</div>
+            </div>
+            <div class="input-block input-block-def  modal-auth__input">
+                <input type="text" class="input-block__inner" placeholder="Email">
+                <div class="input-block__error">Неверное значение!</div>
+            </div>
+            <div class="input-block input-block-def  modal-auth__input">
+                <input type="password" class="input-block__inner" placeholder="Пароль">
+                <div class="input-block__error">Неверное значение!</div>
+            </div>
+            <div class="input-block input-block-def  modal-auth__input">
+                <input type="password" class="input-block__inner" placeholder="Повторите пароль">
+                <div class="input-block__error">Неверное значение!</div>
+            </div>
+            <button type="submit" class="def-btn def-btn--orange modal-auth__submit">Зарегистрироваться</button>
+        </div>
+        <div class="modal-close"></div>
+    </div>
+    <div class="modal modal-auth modal-login">
+        <div class="form modal-auth-form">
+            <div class="modal-auth__title">Вход в кабинет</div>
+            <div class="input-block input-block-def  modal-auth__input">
+                <input type="text" class="input-block__inner" placeholder="Email">
+                <div class="input-block__error">Неверное значение!</div>
+            </div>
+            <div class="input-block input-block-def  modal-auth__input">
+                <input type="password" class="input-block__inner" placeholder="Пароль">
+                <div class="input-block__error">Неверное значение!</div>
+            </div>
+            <button type="submit" class="def-btn def-btn--orange modal-auth__submit">Войти в личный кабинет</button>
+        </div>
+        <div class="modal-auth-btns">
+            <button class="modal-auth-btns__item" onclick="openModal(document.querySelector('.modal-restore'))">Забыли пароль?</button>
+            <button class="modal-auth-btns__item" onclick="openModal(document.querySelector('.modal-reg'))">Регистрация</button>
+        </div>
+        <div class="modal-close"></div>
+    </div>
+    <div class="modal modal-auth modal-restore">
+        <div class="form modal-auth-form">
+            <div class="modal-auth__title">Восстановить аккаунт</div>
+            <div class="input-block input-block-def  modal-auth__input">
+                <input type="text" class="input-block__inner" placeholder="Email">
+                <div class="input-block__error">Неверное значение!</div>
+            </div>
+            <button type="submit" class="def-btn def-btn--orange modal-auth__submit">Восстановить</button>
+        </div>
+        <div class="modal-auth-btns">
+            <button class="modal-auth-btns__item" onclick="openModal(document.querySelector('.modal-login'))">Вход</button>
+            <button class="modal-auth-btns__item" onclick="openModal(document.querySelector('.modal-reg'))">Регистрация</button>
+        </div>
+        <div class="modal-close"></div>
+    </div>
+    <div class="overlay-trigger"></div>
+</div>

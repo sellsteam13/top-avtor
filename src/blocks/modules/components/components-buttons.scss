@@ -1,0 +1,135 @@
+.def-btn {
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: rem(14);
+    border-radius: 5px;
+    svg,
+    img {
+        margin-right: 7px;
+        max-height: 30px;
+    }
+    &--blue {
+        background: #1998FF;
+        color: $white;
+        transition: background-color $trans, box-shadow $trans;
+        &:hover {
+            background-color: #E5A003;
+            transition: background-color $trans, box-shadow $trans;
+        }
+        &:active,
+        &:focus {
+            background: #E5A003;
+            box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.2);
+            transition: background-color $trans, box-shadow $trans;
+        }
+        svg {
+            fill: $white;
+            stroke: $white;
+        }
+    }
+    &--orange {
+        background-color: #E5A003;
+        color: $white;
+        transition: background-color $trans, box-shadow $trans;
+        svg {
+            fill: $white;
+            stroke: $white;
+        }
+        &:hover {
+            background-color: #E48F0E;
+            transition: background-color $trans, box-shadow $trans;
+        }
+        &:active,
+        &:focus {
+            background: #E48F0E;
+            box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.2);
+            transition: background-color $trans, box-shadow $trans;
+        }
+    }
+    &--rblue {
+        height: 57px;
+        background: #1998FF;
+        border-radius: 50px;
+        color: $white;
+        font-weight: 800;
+        font-size: rem(12);
+        text-transform: uppercase;
+        letter-spacing: .05em;
+        transition: background-color $trans, box-shadow $trans;
+        &:hover {
+            background-color: #0F7DD6;
+            transition: background-color $trans, box-shadow $trans;
+        }
+        &:active,
+        &:focus {
+            background: #0F7DD6;
+            box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.2);
+            transition: background-color $trans, box-shadow $trans;
+        }
+        svg {
+            fill: $white;
+            stroke: $white;
+        }
+    }
+    &--white {
+        color: #3D4C64;
+        background: $white;
+        border: 1px solid #D7E3EF;
+        border-radius: 50px;
+        transition: color $trans, border-color $trans;
+        font-weight: normal;
+        &:hover,
+        &:active,
+        &:focus {
+            color: #1F2125;
+            border-color: #A6B0BA;
+            transition: color $trans, border-color $trans;
+        }
+    }
+    &--trans {
+        background: $white;
+        border: 1px solid #1998FF;
+        transition: background-color $trans, box-shadow $trans;
+        &:hover {
+            background-color: #1998FF;
+            transition: background-color $trans, box-shadow $trans;
+            svg {
+                fill: $white;
+                transition: fill $trans;
+            }
+            span {
+                color: $white;
+                transition: color $trans;
+            }
+        }
+        &:focus,
+        &:active {
+            background-color: #1998FF;
+            box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.17);
+            transition: background-color $trans, box-shadow $trans;
+            svg {
+                fill: #0C3454;
+                transition: fill $trans;
+            }
+            span {
+                color: #0C3454;
+                transition: color $trans;
+            }
+        }
+        svg {
+            fill: #1998FF;
+            stroke: #1998FF;
+            margin-right: 10px;
+            transition: fill $trans;
+        }
+        span {
+            font-weight: bold;
+            font-size: rem(14);
+            color: #1C6DAF;
+            transition: color $trans;
+        }
+    }
+}
